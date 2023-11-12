@@ -1,0 +1,48 @@
+#fw-ext-backups-demo-list .theme .theme-actions {
+	opacity: 1;
+}
+
+#fw-ext-backups-demo-list .theme a.more-details {
+	text-decoration: none;
+}
+
+#fw-ext-backups-demo-list .fw-ext-backups-demo-item.active .theme-actions {
+	display: none;
+}
+
+
+/* status modal */
+
+.fw-ext-backups-demo-status-modal .progress-percent {
+	background: #ddd;
+	margin: 0 30px;
+}
+
+.fw-ext-backups-demo-status-modal .progress-percent > div {
+	background: #0085ba;
+	height: 3px;
+}
+
+#videopro-dialog-confirm {
+	display: none;
+}
+
+.ui-dialog {
+	position: fixed;
+	background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    box-shadow: 1px 1px 1px #888888;
+}
+
+.ui-dialog-titlebar-close {
+	display: none;
+}
+
+.ui-dialog-buttonset button {
+	margin-right: 2px; 
+}
+
+/* end: status modal */

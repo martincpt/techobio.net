@@ -1,0 +1,234 @@
+/* HTML for TAB ====
+ *
+ * 
+ <div class="easy-tab" id="easy-tab-1">
+	<ul class="tabs">
+		<li id="tabtitle-tab-1" class="active custom"><a href="#tab-tabid1">Title 1</a></li>
+		<li id="tabtitle-tab-2" class="custom"><a href="#tab-tabid1">Title 2</a></li>
+		<li id="tabtitle-tab-3" class="custom"><a href="#tab-tabid1">Title 3</a></li>		
+	</ul>
+	<div class="panels">
+		<div class="tab-panel active custom colum-2" id="tab-1">
+			<div class="widget">
+				..
+			</div>
+			<div class="widget">
+				..
+			</div>
+			<div class="clearer"><!-- --></div>
+		</div>
+		<div class="tab-panel custom" id="tab-2">
+			...
+		</div>
+		<div class="tab-panel custom" id="tab-3">
+			...
+		</div>
+	</div>
+ </div>
+ *
+ *
+ * HTML for COLLAPSE ==============
+ *
+ <div class="easy-tab" id="easy-tab-1">
+  	<div class="collapse custom">
+		<div id="tabtitle-tab-1" class="active heading">Heading 1</div>
+		<div class="tab-panel column-2" id="tab-1">
+			<div class="widget">
+				..
+			</div>
+			<div class="widget">
+				..
+			</div>
+			<div class="clearer"><!-- --></div>
+		</div>
+	</div>
+	<div class="collapse custom">
+		<div id="tabtitle-tab-2" class="heading">Heading 2</div>
+		<div class="tab-panel" id="tab-1">
+			...
+		</div>
+	</div>
+	<div class="collapse custom">
+		<div id="tabtitle-tab-3" class="heading">Heading 3</div>
+		<div class="tab-panel" id="tab-3">
+			...
+		</div>
+	</div> 
+ *
+ */
+ 
+
+/* Wrapper class for the tab */
+.easy-tab{
+    
+}
+
+/* Tab header */
+.easy-tab .tabs {
+    list-style: none;
+    padding:0;
+	margin:0
+}
+.easy-tab .tabs li{
+    display: inline-block;
+	position: relative;
+	margin-right:6px;
+}
+.easy-tab .tabs li a{
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: #eeeeee;
+    border-bottom: none;
+    outline: none;
+	display:inline-block;
+}
+
+/* Tab header : hover state */
+.easy-tab .tabs li a:hover {
+}
+
+/* Tab header : active state */
+.easy-tab .tabs li.active a {
+    background-color: #fff;
+    border-bottom: none;
+	padding: 5px 10px 6px 10px;
+}
+.easy-tab .tabs li.active a:hover {
+    background-color: #fff;
+    border-bottom: none;
+}
+
+/* Tab panel */
+.easy-tab .panels{
+    border: 1px solid #ccc;
+    background:#FFF;
+    padding: 10px;    
+	margin-top:-1px;
+}
+.easy-tab .tab-panel{
+    display: none;
+}
+
+/* Tab panel : active state */
+.easy-tab .tab-panel.active{
+	display: block;
+}
+.easy-tab .tab-panel .widgettitle{
+    display: none;
+}
+
+/* Tab panel : inner content */
+.easy-tab .tab-panel ul{
+	margin-left:20px
+}
+.easy-tab .tab-panel .widget{padding:0;margin:0}
+
+/* Collapse */
+.easy-tab .etw_collapse{
+	margin:0 0 3px 0;
+}
+/* Closing state */
+.easy-tab .etw_collapse .heading{
+	background:#CCC url(images/collapse-close.png) right no-repeat;
+	padding:5px 15px;
+	cursor:pointer;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+/* Opening state */
+.easy-tab .etw_collapse .heading.heading-open{
+	background-image:url(images/collapse-open.png);
+}
+.easy-tab .etw_collapse .heading:hover{
+	background-color:#F2F2F2;
+}
+.easy-tab .etw_collapse .tab-panel{
+	display:none;
+	background:#E2E2E2;
+	margin-top:3px
+}
+.easy-tab .etw_collapse .tab-panel ul{
+	margin-left:15px
+}
+
+/* Multiple-widgets in tab */
+.clearer{clear:both}
+.easy-tab .etw_collapse .widget{
+	padding:10px;
+	box-sizing:border-box;
+	margin:0;
+}
+.easy-tab [class*="column"] .widget{
+	padding:10px;
+	box-sizing:border-box;
+	float:left;
+	clear:none;
+	margin-left:5%;
+}
+.easy-tab .column-1 .widget{
+	width:100%;
+	margin-left:0;
+}
+.easy-tab .column-2 .widget{
+	width:47.5%;
+}
+.easy-tab .column-2 .widget:nth-child(2n+1){
+	margin-left:0;
+}
+.easy-tab .column-3 .widget{
+	width:30%;
+}
+.easy-tab .column-3 .widget:nth-child(3n+1){
+	margin-left:0;
+}
+.easy-tab .column-4 .widget{
+	width:21.25%;
+}
+.easy-tab .column-4 .widget:nth-child(4n+1){
+	margin-left:0;
+}
+.easy-tab .column-5 .widget{
+	width:16%;
+}
+.easy-tab .column-5 .widget:nth-child(5n+1){
+	margin-left:0;
+}
+
+.easy-tab .widget .widgettitle{display:none}
+.easy-tab [class*="column"] .widget .widgettitle{display:block}
+
+@media (max-width: 640px) {
+	.easy-tab [class*="column"] .widget{
+		width:100%;
+		margin-left:0
+	}
+}
+
+/* CSS Triangle */
+.triangle,.triangle-bottom{
+	width: 0px;
+	height: 0px;
+	border-style: solid;	
+	position: absolute;
+	left: 50%;
+	margin-left: -5px;
+}
+.triangle{
+	border-width: 0 10px 10px 10px;
+	border-color: transparent transparent #0a0f14 transparent;
+	top: -10px;
+}
+.triangle-bottom{
+	border-width: 10px 10px 0px 10px;
+	border-color: #0a0f14 transparent transparent transparent;
+	bottom: -10px;
+}
+.easy-tab .tabs li .triangle,.easy-tab .tabs li .triangle-bottom{display:none;}
+.easy-tab .tabs li a .icon{display:none}
+/* sample configuration for icons 
+
+.easy-tab .tabs li a .icon{display: inline-block;width: 32px;height: 32px;vertical-align: middle;margin: 0 5px 0 0;}
+.easy-tab .tabs li.time a .icon{background: url(images/icon-time.png) no-repeat}
+
+*/

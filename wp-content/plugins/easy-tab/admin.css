@@ -1,0 +1,6 @@
+.easytabdivider .widget-title{background:url(images/divider.png) 10px 0 no-repeat;height:42px !important}
+.easytabdivider .widget-title h3{display:none}
+.easytabdivider .widget-top a.widget-action{background:none !important;width:45px !important;height:32px !important}
+.easytabdivider .widget-top{height:35px;background:none !important;border:none !important;-moz-box-shadow: none !important;
+-webkit-box-shadow: none !important;
+box-shadow: none !important;}

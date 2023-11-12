@@ -1,0 +1,8 @@
+[20-Jul-2021 07:18:16 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Walker' not found in /home/martslkt/techobio.net/wp-includes/class-walker-nav-menu.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/martslkt/techobio.net/wp-includes/class-walker-nav-menu.php on line 17
+[20-Jul-2021 08:46:55 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function _deprecated_file() in /home/martslkt/techobio.net/wp-includes/locale.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/martslkt/techobio.net/wp-includes/locale.php on line 10

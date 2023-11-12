@@ -1,0 +1,2079 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Cactus Video Translation\n"
+"POT-Creation-Date: 2017-02-04 15:20+0700\n"
+"PO-Revision-Date: 2017-02-04 15:46+0700\n"
+"Last-Translator: \n"
+"Language-Team: CactusThemes <hi@cactusthemes.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: esc_html__;esc_html_e;__;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SearchPathExcluded-1: includes/options-page\n"
+
+#: cactus-video.php:20
+msgid "General"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "Player for Video File"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "JWPlayer"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "FlowPlayer"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "VideoJS - HTML5 Video Player"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "WordPress Native Player: MediaElement"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "Force Using VideoJS for external videos"
+msgstr ""
+
+#: cactus-video.php:20 cactus-video.php:1215 widgets/top-channel.php:213
+msgid "Yes"
+msgstr ""
+
+#: cactus-video.php:20 widgets/top-channel.php:214
+msgid "No"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "Auto Play Video"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "Auto Load Next Video"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "Auto Load Next Video after"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "Enter number in seconds. Ex: 5 (seconds)"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "Choose Next Video for Auto Load"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "Newer Video"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "Older Video"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "Youtube Settings"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "Force Using JWPlayer"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "Related videos"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "Display related videos at the end of the video"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "Hide"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "Show"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "Use HTML5 player"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "Use HTML5 player to play YouTube videos"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "Show Video Info on player"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "Remove annotations on video"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "Force using Embed Code"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "Allow Full Screen"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "Allow Networking"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "Allow Interactive Videos"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "Disable"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "Enable"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "Playlist settings"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "Playlist slug"
+msgstr ""
+
+#: cactus-video.php:20
+msgid ""
+"Change single playlist slug. Remember to save the permalink settings again "
+"in Settings > Permalinks"
+msgstr ""
+
+#: cactus-video.php:20
+msgid "Playlists Listing page"
+msgstr ""
+
+#: cactus-video.php:20
+msgid ""
+"Assign Playlists Listing page to a page. Remember to save the permalink "
+"settings again in Settings > Permalinks"
+msgstr ""
+
+#: cactus-video.php:162 video-hook-functions.php:1157
+msgid "Watch Later"
+msgstr ""
+
+#: cactus-video.php:166
+msgid "Playlist Listing Page"
+msgstr ""
+
+#: cactus-video.php:172
+msgid "Subscribed Channels Page"
+msgstr ""
+
+#: cactus-video.php:173
+msgid "Channel Listing Page"
+msgstr ""
+
+#: cactus-video.php:179
+msgid "Video Series Listing Page"
+msgstr ""
+
+#: cactus-video.php:185
+msgid "Subscribed Authors Page"
+msgstr ""
+
+#: cactus-video.php:244
+msgid "You are about to delete a video. Are you sure?"
+msgstr ""
+
+#: cactus-video.php:245
+msgid "You are about to delete a playlist. Are you sure?"
+msgstr ""
+
+#: cactus-video.php:246
+msgid "You are about to delete a channel. Are you sure?"
+msgstr ""
+
+#: cactus-video.php:247
+msgid "Please choose a category"
+msgstr ""
+
+#: cactus-video.php:248
+msgid "Please choose a channel"
+msgstr ""
+
+#: cactus-video.php:249
+msgid "Please choose a playlist"
+msgstr ""
+
+#: cactus-video.php:307
+msgid "Video Extensions"
+msgstr ""
+
+#: cactus-video.php:307
+msgid "Video Extensions - Settings"
+msgstr ""
+
+#: cactus-video.php:307 cactus-video.php:310 cactus-video.php:313
+#: membership-admin.php:179 video-hook-membership.php:106
+#: video-hook-membership.php:158
+msgid "Save"
+msgstr ""
+
+#: cactus-video.php:310
+#: includes/gravityforms/classes/class-gf-field-channels.php:12
+msgid "Video Channels"
+msgstr ""
+
+#: cactus-video.php:313 video-playlists.php:234
+msgid "Video Playlist"
+msgstr ""
+
+#: cactus-video.php:419
+msgid "Edit Post"
+msgstr ""
+
+#: cactus-video.php:568
+msgid "Image has been uploaded!"
+msgstr ""
+
+#: cactus-video.php:577
+msgid "Changes have been saved!"
+msgstr ""
+
+#: cactus-video.php:591
+msgid "You do not have enough permissions to do this!!!"
+msgstr ""
+
+#: cactus-video.php:612
+msgid "Upload failed!"
+msgstr ""
+
+#: cactus-video.php:625
+msgid ""
+"This Ads appears on the Left Side of Video Player (full-width layout only). "
+"Enter Google AdSense Ad Slot ID here. If left empty, \"Video Player Side-Ads "
+"Left - Custom Code\" will be used."
+msgstr ""
+
+#: cactus-video.php:634
+msgid "Custom Code for Video Player Side-Ads Left"
+msgstr ""
+
+#: cactus-video.php:643
+msgid ""
+"This Ads appears on the Right Side of Video Player (full-width layout only). "
+"If left empty, \"Single Post Ads 2 - Custom Code\" will be used."
+msgstr ""
+
+#: cactus-video.php:652
+msgid "Custom Code for Video Player Side-Ads Right"
+msgstr ""
+
+#: cactus-video.php:660
+msgid "Enable Membership Features"
+msgstr ""
+
+#: cactus-video.php:661
+msgid "Allow Members to create and upload videos"
+msgstr ""
+
+#: cactus-video.php:670
+msgid "Agreement Text"
+msgstr ""
+
+#: cactus-video.php:671
+msgid ""
+"Change \"I agree to the Page Term\" text in the Create Channel Form. A "
+"hyperlink can be used here"
+msgstr ""
+
+#: cactus-video.php:680
+msgid "Upload Videos In Channel Form (Contact Form 7)"
+msgstr ""
+
+#: cactus-video.php:681
+#, php-format
+msgid ""
+"ID of Contact Form 7 to use for Upload Videos Form In Channel. See %s to "
+"configure the form"
+msgstr ""
+
+#: cactus-video.php:690
+msgid "Upload Videos In Channel Form (Gravity Form)"
+msgstr ""
+
+#: cactus-video.php:691
+#, php-format
+msgid ""
+"ID of Gravity Form to use for Upload Videos Form In Channel. See %s to "
+"configure the form"
+msgstr ""
+
+#: cactus-video.php:700
+msgid "Upload Videos In Playlist Form (Contact Form 7)"
+msgstr ""
+
+#: cactus-video.php:701
+#, php-format
+msgid ""
+"ID of Contact Form 7 to use for Upload Videos Form In Playlist. See %s to "
+"configure the form"
+msgstr ""
+
+#: cactus-video.php:710
+msgid "Upload Videos In Playlist Form (Gravity Form)"
+msgstr ""
+
+#: cactus-video.php:711
+#, php-format
+msgid ""
+"ID of Gravity Form to use for Upload Videos Form In Playlist. See %s to "
+"configure the form"
+msgstr ""
+
+#: cactus-video.php:720
+msgid "Allow Edit Video Categories and Tags"
+msgstr ""
+
+#: cactus-video.php:721
+msgid ""
+"After users upload video, allow them to change categories and tags of the "
+"video"
+msgstr ""
+
+#: cactus-video.php:749 cactus-video.php:754
+msgid "Added to Watch Later"
+msgstr ""
+
+#: cactus-video.php:765
+msgid "Removed from Watch Later"
+msgstr ""
+
+#: cactus-video.php:771
+#, php-format
+msgid "<a href=\"%s\">Sign in</a> to add this to Watch Later"
+msgstr ""
+
+#: cactus-video.php:933
+msgid "Video Extension"
+msgstr ""
+
+#: cactus-video.php:1118
+msgid "Most Used"
+msgstr ""
+
+#: cactus-video.php:1142
+#, php-format
+msgid "+ %s"
+msgstr ""
+
+#: cactus-video.php:1179
+msgid ""
+"Video is trashed. If you accidently deleted this video, please contact site "
+"administrator"
+msgstr ""
+
+#: cactus-video.php:1182
+msgid ""
+"Channel is trashed. If you accidently deleted this channel, please contact "
+"site administrator"
+msgstr ""
+
+#: cactus-video.php:1185
+msgid ""
+"Playlist is trashed. If you accidently deleted this playlist, please contact "
+"site administrator"
+msgstr ""
+
+#: cactus-video.php:1191 video-channels.php:290 video-channels.php:305
+#: video-channels.php:347 video-playlists.php:75 video-playlists.php:118
+msgid "Cheating, huh?!"
+msgstr ""
+
+#: cactus-video.php:1202
+msgid "Video URL"
+msgstr ""
+
+#: cactus-video.php:1202
+msgid ""
+"Paste the url from popular video sites like YouTube or Vimeo. For example: "
+"<br/><code>http://www.youtube.com/watch?v=nTDNLUzjkpg</code><br/>or<br/"
+"><code>http://vimeo.com/23079092</code>"
+msgstr ""
+
+#: cactus-video.php:1203
+msgid "Video File"
+msgstr ""
+
+#: cactus-video.php:1203
+msgid ""
+"Paste your video file url to here. Supported Video Formats: mp4, m4v, webmv, "
+"webm, ogv and flv.<br/><b>About Cross-platform and Cross-browser Support</"
+"b><br/>If you want your video works in all platforms and browsers(HTML5 and "
+"Flash), you should provide various video formats for same video, if the "
+"video files are ready, enter one url per line.<br/> For Example:<br/> "
+"<code>http://yousite.com/sample-video.m4v</code><br/><code>http://yousite."
+"com/sample-video.ogv</code><br/> <b>Recommended Format Solution:</b> webmv + "
+"m4v + ogv. "
+msgstr ""
+
+#: cactus-video.php:1204
+msgid "Upload/Choose Video File"
+msgstr ""
+
+#: cactus-video.php:1205
+msgid "Video Embeded Code"
+msgstr ""
+
+#: cactus-video.php:1205
+msgid ""
+"Paste the raw video code to here, such as <code>&lt;</code><code>object</"
+"code><code>&gt;</code>,<code>&lt;</code><code>embed</code><code>&gt;</code> "
+"or <code>&lt;</code><code>iframe</code><code>&gt;</code> code."
+msgstr ""
+
+#: cactus-video.php:1206
+msgid "Duration"
+msgstr ""
+
+#: cactus-video.php:1206
+msgid ""
+"Human-read time value, ex. mm:ss. Leave empty to fetch data again or enter "
+"your own value here"
+msgstr ""
+
+#: cactus-video.php:1207
+msgid "Download Link"
+msgstr ""
+
+#: cactus-video.php:1207
+msgid ""
+"If this video can be downloaded, provide the download link here. In fact, "
+"you can add any link here"
+msgstr ""
+
+#: cactus-video.php:1208
+msgid "Download Button Text"
+msgstr ""
+
+#: cactus-video.php:1208
+msgid "Change the Download Button text"
+msgstr ""
+
+#: cactus-video.php:1209
+msgid "External Link"
+msgstr ""
+
+#: cactus-video.php:1209
+msgid ""
+"If this video has external link then instead of playing video, users will be "
+"redirected to this URL when they click on thumbnail image"
+msgstr ""
+
+#: cactus-video.php:1212
+msgid "Has Single Page"
+msgstr ""
+
+#: cactus-video.php:1213
+msgid ""
+"Choose to disable single page for this video. It means that users will be "
+"redirected to External Link when clicking on thumbnail image of this video "
+"in archives page"
+msgstr ""
+
+#: cactus-video.php:1216
+msgid "No (use External Link)"
+msgstr ""
+
+#: cactus-video.php:1220
+msgid "Video Header"
+msgstr ""
+
+#: cactus-video.php:1221
+msgid ""
+"Choose to display Thumbnail Image in Single Post, or display Video Player"
+msgstr ""
+
+#: cactus-video.php:1223
+msgid "Default (use setting in Video Extension"
+msgstr ""
+
+#: cactus-video.php:1224
+msgid "Thumbnail Image"
+msgstr ""
+
+#: cactus-video.php:1225
+msgid "Video Player"
+msgstr ""
+
+#: cactus-video.php:1230
+msgid "Video settings"
+msgstr ""
+
+#: cactus-video.php:1236
+msgid "Player logic"
+msgstr ""
+
+#: cactus-video.php:1236
+msgid ""
+"Enter shortcode (ex: [my_shortcode][player][/my_shortcode], "
+"<strong>[player]</strong> is required)<br>or condition function (ex: "
+"<b>is_user_logged_in() && is_sticky()</b> ) to control video player "
+"visiblitily"
+msgstr ""
+
+#: cactus-video.php:1237
+msgid "Alternative Content"
+msgstr ""
+
+#: cactus-video.php:1237
+msgid "Content to display when Condition is false (Not work with Shortcodes)"
+msgstr ""
+
+#: cactus-video.php:1240
+msgid "Player Logic"
+msgstr ""
+
+#: cactus-video.php:1248
+msgid "Do Not Fetch"
+msgstr ""
+
+#: cactus-video.php:1248
+msgid ""
+"Check bellow checkbox if you do not want to auto-fetch video data after save/"
+"edit. To chose which fields to fetch, go to Video Setting > "
+msgstr ""
+
+#: cactus-video.php:1251
+msgid "Videos Auto Fetch Data"
+msgstr ""
+
+#: includes/Custom-Meta-Boxes-master/class.cmb-meta-box.php:90
+msgid "Are you sure you want to delete this field?"
+msgstr ""
+
+#: includes/Custom-Meta-Boxes-master/classes.fields.php:68
+msgid "Add New"
+msgstr ""
+
+#: includes/Custom-Meta-Boxes-master/classes.fields.php:69
+msgid "Remove Field"
+msgstr ""
+
+#: includes/Custom-Meta-Boxes-master/classes.fields.php:461
+msgid "Add File"
+msgstr ""
+
+#: includes/Custom-Meta-Boxes-master/classes.fields.php:479
+#: includes/Custom-Meta-Boxes-master/classes.fields.php:553
+#: video-data-functions.php:41 video-data-functions.php:68
+msgid "Remove"
+msgstr ""
+
+#: includes/Custom-Meta-Boxes-master/classes.fields.php:541
+msgid "Add Image"
+msgstr ""
+
+#: includes/Custom-Meta-Boxes-master/classes.fields.php:1096
+msgid "Type to search"
+msgstr ""
+
+#: includes/Custom-Meta-Boxes-master/classes.fields.php:1423
+msgid "Add New Group"
+msgstr ""
+
+#: includes/Custom-Meta-Boxes-master/classes.fields.php:1424
+msgid "Remove Group"
+msgstr ""
+
+#: includes/Custom-Meta-Boxes-master/classes.fields.php:1623
+msgid "Drag to set the exact location"
+msgstr ""
+
+#: includes/gravityforms/classes/class-gf-field-categories.php:12
+msgid "Post Categories"
+msgstr ""
+
+#: includes/gravityforms/classes/class-gf-field-categories.php:37
+msgid "This field is required. Please choose at least one category"
+msgstr ""
+
+#: includes/gravityforms/classes/class-gf-field-categories.php:166
+#: includes/gravityforms/classes/class-gf-field-channels.php:171
+#: includes/gravityforms/classes/class-gf-field-playlists.php:171
+#, php-format
+msgid "%d of %d items shown"
+msgstr ""
+
+#: includes/gravityforms/classes/class-gf-field-channels.php:38
+msgid "This field is required. Please choose at least one channel"
+msgstr ""
+
+#: includes/gravityforms/classes/class-gf-field-current-channel.php:15
+#: user-submit-post-hooks.php:660 user-submit-post-hooks.php:686
+msgid "Current Channel"
+msgstr ""
+
+#: includes/gravityforms/classes/class-gf-field-current-playlist.php:15
+#: user-submit-post-hooks.php:665 user-submit-post-hooks.php:689
+msgid "Current Playlist"
+msgstr ""
+
+#: includes/gravityforms/classes/class-gf-field-hidden-flag.php:15
+msgid "Refresh After Uploaded"
+msgstr ""
+
+#: includes/gravityforms/classes/class-gf-field-playlists.php:12
+msgid "Video Playlists"
+msgstr ""
+
+#: includes/gravityforms/classes/class-gf-field-playlists.php:38
+msgid "This field is required. Please choose at least one playlist"
+msgstr ""
+
+#: includes/gravityforms/classes/class-gf-field-report.php:14
+#: user-submit-post-hooks.php:650
+msgid "Report URL"
+msgstr ""
+
+#: includes/gravityforms/classes/class-gf-field-report.php:40
+msgid "This field is required."
+msgstr ""
+
+#: includes/gravityforms/classes/class-gf-field-report.php:68
+msgid "{video url}"
+msgstr ""
+
+#: includes/gravityforms/classes/class-gf-field-tags.php:12
+msgid "Post Tags"
+msgstr ""
+
+#: includes/gravityforms/classes/class-gf-field-tags.php:38
+msgid "This field is required. Please enter at least one tag"
+msgstr ""
+
+#: includes/gravityforms/classes/class-gf-field-tags.php:48
+#, php-format
+msgid "You are limited to enter %d tags"
+msgstr ""
+
+#: includes/page-templates/channel-listing.php:40
+#: user-submit-post-hooks.php:632
+msgid "Channels"
+msgstr ""
+
+#: includes/page-templates/channel-listing.php:110
+msgid "Order By: &nbsp; Subscribers"
+msgstr ""
+
+#: includes/page-templates/channel-listing.php:112
+msgid "Order By: &nbsp; Latest"
+msgstr ""
+
+#: includes/page-templates/channel-listing.php:115
+#: shortcode/channel-listing.php:147 shortcode/series-listing.php:173
+msgid "Latest"
+msgstr ""
+
+#: includes/page-templates/channel-listing.php:116
+msgid "Subscribers"
+msgstr ""
+
+#: includes/page-templates/playlist-listing.php:36
+#: templates/single-channel.php:74 user-submit-post-hooks.php:638
+msgid "Playlists"
+msgstr ""
+
+#: includes/page-templates/subscribed-authors.php:89
+msgid "You do not have any subscriptions.<br>Browse Authors to subscribe."
+msgstr ""
+
+#: includes/page-templates/subscribed-authors.php:94
+#: includes/page-templates/subscribed-authors.php:99
+msgid "Browse Authors"
+msgstr ""
+
+#: includes/page-templates/subscribed-channels.php:86
+msgid "You do not have any subscriptions.<br>Browse Channels to subscribe."
+msgstr ""
+
+#: includes/page-templates/subscribed-channels.php:91
+#: includes/page-templates/subscribed-channels.php:96
+msgid "Browse Channels"
+msgstr ""
+
+#: includes/page-templates/watch-later.php:93 templates/single-playlist.php:85
+msgid "Play All Videos"
+msgstr ""
+
+#: includes/page-templates/watch-later.php:120
+#: includes/page-templates/watch-later.php:123
+msgid "There isn't any videos yet!"
+msgstr ""
+
+#: membership-admin.php:6
+msgid "Membership Settings"
+msgstr ""
+
+#: membership-admin.php:70
+msgid "Settings are saved"
+msgstr ""
+
+#: membership-admin.php:81
+msgid "VideoPro Membership Settings"
+msgstr ""
+
+#: membership-admin.php:89
+msgid "Create Channels Roles"
+msgstr ""
+
+#: membership-admin.php:90 membership-admin.php:91
+msgid "Create Channels (Limited)"
+msgstr ""
+
+#: membership-admin.php:90
+msgid ""
+"Number of channels allowed to create (when users are in a limited membership)"
+msgstr ""
+
+#: membership-admin.php:90 membership-admin.php:113 membership-admin.php:136
+msgid "(enter 0 to disable this limited mode)"
+msgstr ""
+
+#: membership-admin.php:92
+msgid "Choose Memberships of which users can create limited number of channels"
+msgstr ""
+
+#: membership-admin.php:97 membership-admin.php:106 membership-admin.php:120
+#: membership-admin.php:129 membership-admin.php:142 membership-admin.php:150
+#: membership-admin.php:160
+msgid "View"
+msgstr ""
+
+#: membership-admin.php:100
+msgid "Create Channels Unlimited"
+msgstr ""
+
+#: membership-admin.php:101
+msgid ""
+"Choose Memberships of which users can create unlimited number of channels"
+msgstr ""
+
+#: membership-admin.php:112
+msgid "Create Playlists Roles"
+msgstr ""
+
+#: membership-admin.php:113 membership-admin.php:114
+msgid "Create Playlists (Limited)"
+msgstr ""
+
+#: membership-admin.php:113
+msgid ""
+"Number of playlists allowed to create (when users are in a limited "
+"membership)"
+msgstr ""
+
+#: membership-admin.php:115
+msgid ""
+"Choose Memberships of which users can create limited number of playlists"
+msgstr ""
+
+#: membership-admin.php:123
+msgid "Create Playlists Unlimited"
+msgstr ""
+
+#: membership-admin.php:124
+msgid ""
+"Choose Memberships of which users can create unlimited number of playlists"
+msgstr ""
+
+#: membership-admin.php:135
+msgid "Upload Videos Roles"
+msgstr ""
+
+#: membership-admin.php:136 membership-admin.php:137
+msgid "Upload Videos (Limited)"
+msgstr ""
+
+#: membership-admin.php:136
+msgid ""
+"Number of videos allowed to upload (when users are in a limited membership)"
+msgstr ""
+
+#: membership-admin.php:137
+msgid "Choose Memberships of which users can upload limited number of videos"
+msgstr ""
+
+#: membership-admin.php:145
+msgid "Upload Videos Unlimited"
+msgstr ""
+
+#: membership-admin.php:145
+msgid "Choose Memberships of which users can upload unlimited number of videos"
+msgstr ""
+
+#: membership-admin.php:154
+msgid "Video Ads"
+msgstr ""
+
+#: membership-admin.php:155
+msgid "Disable Video Ads"
+msgstr ""
+
+#: membership-admin.php:155
+msgid "Choose Memberships of which users will not see video ads"
+msgstr ""
+
+#: membership-admin.php:163
+msgid "Other Settings"
+msgstr ""
+
+#: membership-admin.php:164
+msgid "Default Channel Status"
+msgstr ""
+
+#: membership-admin.php:165 membership-admin.php:168 membership-admin.php:171
+msgid "Publish"
+msgstr ""
+
+#: membership-admin.php:166 membership-admin.php:169 membership-admin.php:172
+msgid "Pending"
+msgstr ""
+
+#: membership-admin.php:166
+msgid "Default status for channels created by members"
+msgstr ""
+
+#: membership-admin.php:167
+msgid "Default Playlist Status"
+msgstr ""
+
+#: membership-admin.php:169
+msgid "Default status for playlists created by members"
+msgstr ""
+
+#: membership-admin.php:170
+msgid "Default Video Status"
+msgstr ""
+
+#: membership-admin.php:172
+msgid "Default status for videos uploaded by members"
+msgstr ""
+
+#: membership-admin.php:173
+msgid "Number of days before Expired Date to show warning"
+msgstr ""
+
+#: membership-admin.php:174
+msgid "Warning Message"
+msgstr ""
+
+#: membership-admin.php:174
+msgid ""
+"Use this text to add Membership Name Tag: <b>{name_tag}</b> and this text to "
+"add number of days before expired date: <b>{days}</b>. HTML tags are allowed "
+"to use in this message. For example: <br/><br/><i>Your subscription: "
+"{name_tag} is about to expired in <strong>{days}</strong> days</i><br/><br/"
+">You can also use this shortcode to display the message anywhere: "
+"<b>[vp_member_expired_message]</b>"
+msgstr ""
+
+#: membership-admin.php:175
+msgid "Expired Error Message"
+msgstr ""
+
+#: membership-admin.php:175
+msgid ""
+"Use this text to add Membership Name Tag: <b>{name_tag}</b> and this text to "
+"add number of days before expired date: <b>{days}</b>. HTML tags are allowed "
+"to use in this message. For example: <br/><br/><i>Your subscription: "
+"{name_tag} is expired</i><br/><br/>You can also use this shortcode to "
+"display the message anywhere: <b>[vp_member_expired_message]</b>"
+msgstr ""
+
+#: membership-admin.php:183
+msgid ""
+"<a href=\"https://wordpress.org/plugins/membership/\" target=\"_blank"
+"\">Membership plugin</a> is required to enabled this feature</p>"
+msgstr ""
+
+#: membership-frontend.php:23
+msgid ""
+"Your subscription: {name_tag} is about to expired in <strong>{days}</strong> "
+"days"
+msgstr ""
+
+#: membership-frontend.php:24
+msgid "Your subscription: {name_tag} is expired"
+msgstr ""
+
+#: shortcode/channel-listing.php:110 templates/video-series.php:90
+#: templates/video-series.php:142
+#, php-format
+msgid "%d Videos"
+msgstr ""
+
+#: shortcode/channel-listing.php:136
+msgid "VideoPro Channel Listing"
+msgstr ""
+
+#: shortcode/channel-listing.php:140 shortcode/series-listing.php:165
+msgid "VideoPro"
+msgstr ""
+
+#: shortcode/channel-listing.php:144 shortcode/series-listing.php:170
+msgid "Condition"
+msgstr ""
+
+#: shortcode/channel-listing.php:148 shortcode/series-listing.php:174
+msgid "Most viewed"
+msgstr ""
+
+#: shortcode/channel-listing.php:150 shortcode/series-listing.php:176
+msgid "choose condition to query series. Default is latest"
+msgstr ""
+
+#: shortcode/channel-listing.php:154 shortcode/series-listing.php:180
+msgid "IDs"
+msgstr ""
+
+#: shortcode/channel-listing.php:157 shortcode/series-listing.php:183
+msgid ""
+"(optional) specify list of series IDs, separated by a comma. If it is used, "
+"condition is ignored"
+msgstr ""
+
+#: shortcode/channel-listing.php:161 shortcode/series-listing.php:187
+msgid "Count"
+msgstr ""
+
+#: shortcode/channel-listing.php:164 shortcode/series-listing.php:190
+msgid "number of items to query. Default is 6"
+msgstr ""
+
+#: shortcode/channel-listing.php:168 shortcode/series-listing.php:194
+msgid "Columns"
+msgstr ""
+
+#: shortcode/channel-listing.php:171 shortcode/series-listing.php:198
+msgid "1 Column"
+msgstr ""
+
+#: shortcode/channel-listing.php:172 shortcode/series-listing.php:199
+msgid "2 Columns"
+msgstr ""
+
+#: shortcode/channel-listing.php:173 shortcode/series-listing.php:200
+msgid "3 Columns"
+msgstr ""
+
+#: shortcode/channel-listing.php:175 shortcode/series-listing.php:202
+msgid "number of columns."
+msgstr ""
+
+#: shortcode/channel-listing.php:179 shortcode/series-listing.php:206
+#: templates/ct-channel-video.php:46
+msgid "Title"
+msgstr ""
+
+#: shortcode/channel-listing.php:182 shortcode/series-listing.php:209
+msgid "title of the group"
+msgstr ""
+
+#: shortcode/channel-listing.php:186 shortcode/series-listing.php:213
+msgid "Button text"
+msgstr ""
+
+#: shortcode/channel-listing.php:189 shortcode/series-listing.php:216
+msgid "button text"
+msgstr ""
+
+#: shortcode/channel-listing.php:193 shortcode/series-listing.php:220
+msgid "Button Url"
+msgstr ""
+
+#: shortcode/channel-listing.php:196 shortcode/series-listing.php:223
+msgid "URL of button"
+msgstr ""
+
+#: shortcode/channel-listing.php:201 shortcode/series-listing.php:228
+msgid "Button target"
+msgstr ""
+
+#: shortcode/channel-listing.php:204 shortcode/series-listing.php:231
+msgid "open URL in current tab"
+msgstr ""
+
+#: shortcode/channel-listing.php:205 shortcode/series-listing.php:232
+msgid "Open link in new windows"
+msgstr ""
+
+#: shortcode/channel-listing.php:207 shortcode/series-listing.php:234
+msgid "target of button URL"
+msgstr ""
+
+#: shortcode/series-listing.php:137 templates/loop/content-playlist.php:34
+msgid " Videos"
+msgstr ""
+
+#: shortcode/series-listing.php:161
+msgid "VideoPro Series Listing"
+msgstr ""
+
+#: shortcode/user-frontend-submit-button.php:43
+#, php-format
+msgid "Please enter less than or equal to %s tags"
+msgstr ""
+
+#: templates/content-channel-listing.php:59
+#: templates/content-channel-listingcompact.php:59
+#: templates/loop/content-channel-listing.php:47 video-channels.php:258
+#: video-hook-membership.php:839 widgets/top-channel.php:142
+#, php-format
+msgid "%d videos"
+msgstr ""
+
+#: templates/content-channel-listing.php:61
+#: templates/content-channel-listingcompact.php:61
+#: templates/loop/content-channel-listing.php:49 widgets/top-channel.php:145
+#, php-format
+msgid "%d views"
+msgstr ""
+
+#: templates/content.php:53
+msgid "<i class=\"fas fa-angle-right\"></i>"
+msgstr ""
+
+#: templates/content.php:54
+msgid "<i class=\"fas fa-angle-left\"></i>"
+msgstr ""
+
+#: templates/content.php:77
+msgid "View as one page"
+msgstr ""
+
+#: templates/content.php:91
+msgid "tags:"
+msgstr ""
+
+#: templates/content.php:112
+msgid "previous"
+msgstr ""
+
+#: templates/content.php:121
+msgid "next"
+msgstr ""
+
+#: templates/ct-channel-about.php:41
+msgid " videos"
+msgstr ""
+
+#: templates/ct-channel-about.php:42
+msgid " subscribers "
+msgstr ""
+
+#: templates/ct-channel-about.php:43
+msgid " views"
+msgstr ""
+
+#: templates/ct-channel-playlist.php:36
+msgid "There isn't any playlist in this channel"
+msgstr ""
+
+#: templates/ct-channel-playlist.php:39
+msgid "Load More Playlists"
+msgstr ""
+
+#: templates/ct-channel-video.php:13
+msgid "Order By: &nbsp; Published date"
+msgstr ""
+
+#: templates/ct-channel-video.php:15
+msgid "Order By: &nbsp; Views"
+msgstr ""
+
+#: templates/ct-channel-video.php:17
+msgid "Order By: &nbsp; Like"
+msgstr ""
+
+#: templates/ct-channel-video.php:19
+msgid "Order By: &nbsp; Comments"
+msgstr ""
+
+#: templates/ct-channel-video.php:21
+msgid "Order By: &nbsp; Title"
+msgstr ""
+
+#: templates/ct-channel-video.php:23
+msgid "Order By"
+msgstr ""
+
+#: templates/ct-channel-video.php:26
+msgid "Published date"
+msgstr ""
+
+#: templates/ct-channel-video.php:39
+msgid "Views"
+msgstr ""
+
+#: templates/ct-channel-video.php:43
+msgid "Like"
+msgstr ""
+
+#: templates/ct-channel-video.php:45
+msgid "Comments"
+msgstr ""
+
+#: templates/ct-channel-video.php:179
+msgid "There isn't any video in this channel"
+msgstr ""
+
+#: templates/loop/content-channel-listingcompact.php:38
+#, php-format
+msgid "%d subscribers"
+msgstr ""
+
+#: templates/loop/video-series-item.php:29
+#, php-format
+msgid "%d VIDEOS"
+msgstr ""
+
+#: templates/loop/video-series-item.php:29
+#, php-format
+msgid "%d VIDEO"
+msgstr ""
+
+#: templates/loop/video-series-item.php:54
+msgid "VIDEOS"
+msgstr ""
+
+#: templates/loop/video-series-item.php:54
+msgid "VIDEO"
+msgstr ""
+
+#: templates/page-edit.php:50
+msgid "EDIT: "
+msgstr ""
+
+#: templates/page-edit.php:55
+msgid "Video Thumbnail"
+msgstr ""
+
+#: templates/page-edit.php:59 video-hook-membership.php:116
+#: video-hook-membership.php:168
+msgid "Not available yet"
+msgstr ""
+
+#: templates/page-edit.php:65
+msgid "Video Title:"
+msgstr ""
+
+#: templates/page-edit.php:66
+msgid "Video Summary:"
+msgstr ""
+
+#: templates/page-edit.php:67
+msgid "Video Description:"
+msgstr ""
+
+#: templates/page-edit.php:72
+msgid "Video Categories:"
+msgstr ""
+
+#: templates/page-edit.php:112
+msgid "Video Tags: "
+msgstr ""
+
+#: templates/page-edit.php:134
+msgid "Video Playlist:"
+msgstr ""
+
+#: templates/page-edit.php:176
+msgid "Video Channel:"
+msgstr ""
+
+#: templates/page-edit.php:212
+msgid "Back"
+msgstr ""
+
+#: templates/page-edit.php:212
+msgid "Save changes"
+msgstr ""
+
+#: templates/single-channel.php:71 video-functions.php:817
+msgid "Videos"
+msgstr ""
+
+#: templates/single-channel.php:77
+msgid "Discussion"
+msgstr ""
+
+#: templates/single-channel.php:80
+msgid "About"
+msgstr ""
+
+#: templates/single-playlist.php:108
+msgid "There isn't any videos in this playlist yet!"
+msgstr ""
+
+#: templates/video-series.php:96
+msgid "Creator: "
+msgstr ""
+
+#: templates/video-series.php:109 video-series.php:232
+msgid "Stars"
+msgstr ""
+
+#: user-submit-post-hooks.php:22
+msgid "User Submitted Post Title"
+msgstr ""
+
+#: user-submit-post-hooks.php:24
+msgid "User Submitted Post Content"
+msgstr ""
+
+#: user-submit-post-hooks.php:207
+#, php-format
+msgid "%s reported a post"
+msgstr ""
+
+#: user-submit-post-hooks.php:208
+#, php-format
+msgid "%s reported a post has inappropriate content with message:"
+msgstr ""
+
+#: user-submit-post-hooks.php:210
+msgid "You could review it here"
+msgstr ""
+
+#: user-submit-post-hooks.php:372
+msgid "Your post submission has been approved"
+msgstr ""
+
+#: user-submit-post-hooks.php:378
+#, php-format
+msgid ""
+"Congratulation! Your submission has been approved. You can see it here: %s"
+msgstr ""
+
+#: user-submit-post-hooks.php:592 video-hook-functions.php:87
+msgid "Submit Video"
+msgstr ""
+
+#: user-submit-post-hooks.php:599
+msgid ""
+"Please go to Appearance > Sidebars and drag a widget into User Submit "
+"Sidebar. Contact Form 7 or GravityForms plugin is required!"
+msgstr ""
+
+#: user-submit-post-hooks.php:616
+msgid "VideoPro Post Submission"
+msgstr ""
+
+#: user-submit-post-hooks.php:621 video-channels.php:515
+msgid "Categories"
+msgstr ""
+
+#: user-submit-post-hooks.php:626
+msgid "Tags"
+msgstr ""
+
+#: user-submit-post-hooks.php:645
+msgid "VideoPro Post Report"
+msgstr ""
+
+#: user-submit-post-hooks.php:655
+msgid "VideoPro Upload Videos"
+msgstr ""
+
+#: user-submit-post-hooks.php:670 user-submit-post-hooks.php:692
+msgid "Refresh Browser"
+msgstr ""
+
+#: video-channels.php:222 video-hook-membership.php:819
+msgid "Login Require"
+msgstr ""
+
+#: video-channels.php:232 video-hook-membership.php:829
+msgid "Subscribe"
+msgstr ""
+
+#: video-channels.php:233 video-hook-membership.php:830
+msgid "Subscribed"
+msgstr ""
+
+#: video-channels.php:337 video-playlists.php:110
+msgid "Well done!"
+msgstr ""
+
+#: video-channels.php:353
+msgid "You cannot create another channel in 1 minute"
+msgstr ""
+
+#: video-channels.php:456 video-channels.php:457 video-channels.php:572
+#: video-functions.php:12 video-playlists.php:270
+msgid "Channel"
+msgstr ""
+
+#: video-channels.php:458 video-channels.php:459
+msgid "Add New Channel"
+msgstr ""
+
+#: video-channels.php:460 video-hook-membership.php:145
+msgid "Edit Channel"
+msgstr ""
+
+#: video-channels.php:461
+msgid "New Channel"
+msgstr ""
+
+#: video-channels.php:462
+msgid "All Channels"
+msgstr ""
+
+#: video-channels.php:463
+msgid "View Channel"
+msgstr ""
+
+#: video-channels.php:464
+msgid "Search Channel"
+msgstr ""
+
+#: video-channels.php:465
+msgid "No Channel found"
+msgstr ""
+
+#: video-channels.php:466
+msgid "No Channel found in Trash"
+msgstr ""
+
+#: video-channels.php:468 video-channels.php:576 video-playlists.php:273
+msgid "Video Channel"
+msgstr ""
+
+#: video-channels.php:501 video-hook-membership.php:285
+msgid "Category"
+msgstr ""
+
+#: video-channels.php:502
+msgid "Search Categories"
+msgstr ""
+
+#: video-channels.php:503
+msgid "Popular Categories"
+msgstr ""
+
+#: video-channels.php:504
+msgid "All Categories"
+msgstr ""
+
+#: video-channels.php:507
+msgid "Edit Category"
+msgstr ""
+
+#: video-channels.php:508
+msgid "Update Category"
+msgstr ""
+
+#: video-channels.php:509
+msgid "Add New Category"
+msgstr ""
+
+#: video-channels.php:510
+msgid "New Category Name"
+msgstr ""
+
+#: video-channels.php:511
+msgid "Separate categories with commas"
+msgstr ""
+
+#: video-channels.php:512
+msgid "Add or remove categories"
+msgstr ""
+
+#: video-channels.php:513
+msgid "Choose from the most used categories"
+msgstr ""
+
+#: video-channels.php:514
+msgid "No categories found."
+msgstr ""
+
+#: video-channels.php:572
+msgid "Add this video to a channel"
+msgstr ""
+
+#: video-channels.php:583
+msgid "Sidebar"
+msgstr ""
+
+#: video-channels.php:583
+msgid "Default"
+msgstr ""
+
+#: video-channels.php:583
+msgid "Left & Right"
+msgstr ""
+
+#: video-channels.php:583
+msgid "Left"
+msgstr ""
+
+#: video-channels.php:583
+msgid "Right"
+msgstr ""
+
+#: video-channels.php:583
+msgid "Hidden"
+msgstr ""
+
+#: video-channels.php:583
+msgid "Choose sidebar for this channel"
+msgstr ""
+
+#: video-channels.php:586
+msgid "Thumbnail"
+msgstr ""
+
+#: video-channels.php:588
+msgid "Choose a thumbnail for this channel. A square image is recommended"
+msgstr ""
+
+#: video-channels.php:592
+msgid "Is Verified Channel?"
+msgstr ""
+
+#: video-channels.php:595
+msgid "Not verified"
+msgstr ""
+
+#: video-channels.php:596 video-hook-functions.php:1534
+#: video-hook-functions.php:1571
+msgid "Verified"
+msgstr ""
+
+#: video-channels.php:598
+msgid "Show a Verified Icon to the channel title"
+msgstr ""
+
+#: video-channels.php:603
+msgid "Channel Settings"
+msgstr ""
+
+#: video-channels.php:616
+msgid "Social Account Settings"
+msgstr ""
+
+#: video-channels.php:624
+msgid "Facebook"
+msgstr ""
+
+#: video-channels.php:625
+msgid "Enter link to channel Facebook page"
+msgstr ""
+
+#: video-channels.php:633
+msgid "Twitter"
+msgstr ""
+
+#: video-channels.php:634
+msgid "Enter link to channel Twitter page"
+msgstr ""
+
+#: video-channels.php:642
+msgid "YouTube"
+msgstr ""
+
+#: video-channels.php:643
+msgid "Enter link to channel YouTube page"
+msgstr ""
+
+#: video-channels.php:651
+msgid "LinkedIn"
+msgstr ""
+
+#: video-channels.php:652
+msgid "Enter link to channel LinkedIn page"
+msgstr ""
+
+#: video-channels.php:660
+msgid "Tumblr"
+msgstr ""
+
+#: video-channels.php:661
+msgid "Enter link to channel Tumblr page"
+msgstr ""
+
+#: video-channels.php:669
+msgid "Google Plus"
+msgstr ""
+
+#: video-channels.php:670
+msgid "Enter link to channel Google Plus page"
+msgstr ""
+
+#: video-channels.php:678
+msgid "Pinterest"
+msgstr ""
+
+#: video-channels.php:679
+msgid "Enter link to channel Pinterest page"
+msgstr ""
+
+#: video-channels.php:687
+msgid "Flickr"
+msgstr ""
+
+#: video-channels.php:688
+msgid "Enter link to channel Flickr page"
+msgstr ""
+
+#: video-channels.php:696
+msgid "Email"
+msgstr ""
+
+#: video-channels.php:697
+msgid "Enter channel email contact"
+msgstr ""
+
+#: video-channels.php:705
+msgid "RSS"
+msgstr ""
+
+#: video-channels.php:706
+msgid "Enter channel site's RSS URL"
+msgstr ""
+
+#: video-channels.php:715
+msgid "Custom Social Account"
+msgstr ""
+
+#: video-channels.php:719
+msgid "Add more social accounts using Font Awesome Icons"
+msgstr ""
+
+#: video-channels.php:723
+msgid "Font Awesome Icons"
+msgstr ""
+
+#: video-channels.php:726
+msgid "Enter Font Awesome class (ex: fa-instagram)"
+msgstr ""
+
+#: video-channels.php:733
+msgid "URL"
+msgstr ""
+
+#: video-channels.php:736
+msgid "Enter full link to channel social account (including http)"
+msgstr ""
+
+#: video-channels.php:746
+msgid "Open Social Link in new tab"
+msgstr ""
+
+#: video-channels.php:747
+msgid "Open link in new tab?"
+msgstr ""
+
+#: video-data-functions.php:16
+msgid "Multi Links"
+msgstr ""
+
+#: video-data-functions.php:29
+msgid "Group Title"
+msgstr ""
+
+#: video-data-functions.php:30
+msgid "Links"
+msgstr ""
+
+#: video-data-functions.php:48
+msgid "<i>Click Add Group to start</i>"
+msgstr ""
+
+#: video-data-functions.php:57
+msgid "Add Group"
+msgstr ""
+
+#: video-data-functions.php:58
+msgid ""
+"<i>Paste your videos link (and title) here. Enter one per line.<br/> For "
+"Example:<br/> <code>Trailer 1</code><br/><code>http://www.youtube.com/watch?"
+"v=nTDNLUzjkpg</code><br/><code>Trailer 2</code><br/><code>http://www.youtube."
+"com/watch?v=nTDNLUzjkpg</code><br> You could enter links without title</i>"
+msgstr ""
+
+#: video-functions.php:13 video-playlists.php:222 video-playlists.php:223
+#: video-playlists.php:280
+msgid "Playlist"
+msgstr ""
+
+#: video-functions.php:606
+msgid "Link "
+msgstr ""
+
+#: video-functions.php:675
+msgid "Channel ID"
+msgstr ""
+
+#: video-functions.php:679
+msgid "The Channel ID, Ex: 1, 2, 3"
+msgstr ""
+
+#: video-hook-functions.php:8
+msgid "Reports"
+msgstr ""
+
+#: video-hook-functions.php:9
+msgid "Report"
+msgstr ""
+
+#: video-hook-functions.php:50
+msgid "Report This"
+msgstr ""
+
+#: video-hook-functions.php:62
+msgid ""
+"Please specify an ID for the Contact Form in Video Settings > Video Post > "
+"Spam Flag-Contact Form 7 ID or Spam Flag-Gravity Form ID"
+msgstr ""
+
+#: video-hook-functions.php:271
+msgid "PREV VIDEO"
+msgstr ""
+
+#: video-hook-functions.php:278
+msgid "NEXT VIDEO"
+msgstr ""
+
+#: video-hook-functions.php:308
+msgid "MORE VIDEOS"
+msgstr ""
+
+#: video-hook-functions.php:466 video-hook-functions.php:792
+#, php-format
+msgid "%s Views"
+msgstr ""
+
+#: video-hook-functions.php:469 video-hook-functions.php:795
+#, php-format
+msgid "%s Likes"
+msgstr ""
+
+#: video-hook-functions.php:523
+#, php-format
+msgid "By %s"
+msgstr ""
+
+#: video-hook-functions.php:528 video-hook-functions.php:537
+#: video-hook-functions.php:797
+#, php-format
+msgid "%s Comments"
+msgstr ""
+
+#: video-hook-functions.php:567
+msgid "<i class=\"fas fa-cloud-download-alt\"></i> Download Video"
+msgstr ""
+
+#: video-hook-functions.php:586
+msgid "Screenshots"
+msgstr ""
+
+#: video-hook-functions.php:668
+msgid "LIGHT"
+msgstr ""
+
+#: video-hook-functions.php:672
+msgid "AUTO NEXT"
+msgstr ""
+
+#: video-hook-functions.php:1153
+msgid "Remove from Watch Later"
+msgstr ""
+
+#: video-hook-functions.php:1488
+msgid "Status: "
+msgstr ""
+
+#: video-hook-functions.php:1570
+msgid "Is Verified Author"
+msgstr ""
+
+#: video-hook-functions.php:1572
+msgid "Check to display a Verified Icon to Author Name"
+msgstr ""
+
+#: video-hook-membership.php:15 video-hook-membership.php:54
+msgid "Upload Video"
+msgstr ""
+
+#: video-hook-membership.php:28
+msgid ""
+"Please go to Theme Options > Membership > Upload Videos In Channel Form to "
+"specify a Form ID"
+msgstr ""
+
+#: video-hook-membership.php:67
+msgid ""
+"Please go to Theme Options > Membership > Upload Videos In Playlist Form to "
+"specify a Form ID"
+msgstr ""
+
+#: video-hook-membership.php:93 video-playlists.php:226
+msgid "Edit Playlist"
+msgstr ""
+
+#: video-hook-membership.php:99
+msgid "Playlist Title:"
+msgstr ""
+
+#: video-hook-membership.php:101
+msgid "Playlist Thumbnail:"
+msgstr ""
+
+#: video-hook-membership.php:107 video-hook-membership.php:159
+msgid "Delete"
+msgstr ""
+
+#: video-hook-membership.php:110 video-hook-membership.php:162
+msgid "Current Thumbnail:"
+msgstr ""
+
+#: video-hook-membership.php:151
+msgid "Channel Title:"
+msgstr ""
+
+#: video-hook-membership.php:153
+msgid "Channel Thumbnail:"
+msgstr ""
+
+#: video-hook-membership.php:252
+msgid "Edit This Video"
+msgstr ""
+
+#: video-hook-membership.php:255 video-hook-membership.php:311
+#: video-hook-membership.php:362
+msgid "Sending ..."
+msgstr ""
+
+#: video-hook-membership.php:273
+msgid "Create a new channel"
+msgstr ""
+
+#: video-hook-membership.php:278
+msgid "Name your channel (*)"
+msgstr ""
+
+#: video-hook-membership.php:280 video-hook-membership.php:346
+msgid "Please enter a name"
+msgstr ""
+
+#: video-hook-membership.php:286
+msgid "Select a Category"
+msgstr ""
+
+#: video-hook-membership.php:303 video-hook-membership.php:354
+msgid "You are required to agree the terms"
+msgstr ""
+
+#: video-hook-membership.php:310 video-hook-membership.php:361
+msgid "SUBMIT"
+msgstr ""
+
+#: video-hook-membership.php:339
+msgid "Create a new playlist"
+msgstr ""
+
+#: video-hook-membership.php:344
+msgid "Name your playlist"
+msgstr ""
+
+#: video-hook-membership.php:385
+msgid "Edit Video"
+msgstr ""
+
+#: video-hook-membership.php:501
+msgid "You have reached your limit to create channel"
+msgstr ""
+
+#: video-hook-membership.php:557
+msgid "You have reached your limit to create playlist"
+msgstr ""
+
+#: video-hook-membership.php:618
+msgid "You have reached your limit to upload video"
+msgstr ""
+
+#: video-playlists.php:124
+msgid "You cannot create another playlist in 1 minute"
+msgstr ""
+
+#: video-playlists.php:224 video-playlists.php:225
+msgid "Add New Playlist"
+msgstr ""
+
+#: video-playlists.php:227
+msgid "New Playlist"
+msgstr ""
+
+#: video-playlists.php:228
+msgid "All Playlists"
+msgstr ""
+
+#: video-playlists.php:229
+msgid "View Playlist"
+msgstr ""
+
+#: video-playlists.php:230
+msgid "Search Playlist"
+msgstr ""
+
+#: video-playlists.php:231
+msgid "No Playlist found"
+msgstr ""
+
+#: video-playlists.php:232
+msgid "No Playlist found in Trash"
+msgstr ""
+
+#: video-playlists.php:270
+msgid "Add this playlist to a channel"
+msgstr ""
+
+#: video-playlists.php:280
+msgid "Add this video to a playlist"
+msgstr ""
+
+#: video-playlists.php:284
+msgid "Video PlayList"
+msgstr ""
+
+#: video-series.php:226
+msgid "Release Year"
+msgstr ""
+
+#: video-series.php:227
+msgid "Year of release. Date String appears as you enter"
+msgstr ""
+
+#: video-series.php:229
+msgid "Creators"
+msgstr ""
+
+#: video-series.php:230
+msgid "List of creators, separated by a comma"
+msgstr ""
+
+#: video-series.php:233
+msgid "List of stars, separated by a comma"
+msgstr ""
+
+#: video-series.php:241 video-series.php:242 video-series.php:251
+msgid "Series"
+msgstr ""
+
+#: video-series.php:243
+msgid "Search"
+msgstr ""
+
+#: video-series.php:244
+msgid "All Series"
+msgstr ""
+
+#: video-series.php:245
+msgid "Parent Series"
+msgstr ""
+
+#: video-series.php:246
+msgid "Parent Series:"
+msgstr ""
+
+#: video-series.php:247
+msgid "Edit Series"
+msgstr ""
+
+#: video-series.php:248
+msgid "Update Series"
+msgstr ""
+
+#: video-series.php:249
+msgid "Add New Series"
+msgstr ""
+
+#: video-series.php:250
+msgid "New Series"
+msgstr ""
+
+#: video-series.php:271 video-series.php:272 video-series.php:283
+msgid "Video Series"
+msgstr ""
+
+#: video-series.php:273 video-series.php:274
+msgid "Add New Video Series"
+msgstr ""
+
+#: video-series.php:275
+msgid "Edit Video Series"
+msgstr ""
+
+#: video-series.php:276
+msgid "New Video Series"
+msgstr ""
+
+#: video-series.php:277
+msgid "All Video Series"
+msgstr ""
+
+#: video-series.php:278
+msgid "View Video Series"
+msgstr ""
+
+#: video-series.php:279
+msgid "Search Video Series"
+msgstr ""
+
+#: video-series.php:280
+msgid "No Video Series found"
+msgstr ""
+
+#: video-series.php:281
+msgid "No Video Series found in Trash"
+msgstr ""
+
+#: video-series.php:309
+msgid "Alternative Title in series"
+msgstr ""
+
+#: video-series.php:309
+msgid ""
+"Enter alternative title for this video in series. For example: Episode 1"
+msgstr ""
+
+#: video-series.php:310
+msgid "Order in series"
+msgstr ""
+
+#: video-series.php:310
+msgid "Enter order of this video in series"
+msgstr ""
+
+#: video-series.php:314
+msgid "Video Series settings "
+msgstr ""
+
+#: video-series.php:376
+msgid "SELECT EPISODES: "
+msgstr ""
+
+#: video-series.php:400
+msgid "EPISODES"
+msgstr ""
+
+#: widgets/top-channel.php:7 widgets/top-channel.php:9
+msgid "VideoPro - Top Channels"
+msgstr ""
+
+#: widgets/top-channel.php:181 widgets/widget-recommended-series.php:217
+msgid "Title:"
+msgstr ""
+
+#: widgets/top-channel.php:184
+msgid "IDs (List of Channels IDs or Slugs, separated by a comma):"
+msgstr ""
+
+#: widgets/top-channel.php:188
+msgid "Number of Items:"
+msgstr ""
+
+#: widgets/top-channel.php:192
+msgid "Order by"
+msgstr ""
+
+#: widgets/top-channel.php:194
+msgid "Most Viewed "
+msgstr ""
+
+#: widgets/top-channel.php:195
+msgid "Random"
+msgstr ""
+
+#: widgets/top-channel.php:201
+msgid "Images display"
+msgstr ""
+
+#: widgets/top-channel.php:203
+msgid "Show avatar of author"
+msgstr ""
+
+#: widgets/top-channel.php:204
+msgid "Show cover photo"
+msgstr ""
+
+#: widgets/top-channel.php:205
+msgid "Show thumbnail image"
+msgstr ""
+
+#: widgets/top-channel.php:211
+msgid "Show Channel Information"
+msgstr ""
+
+#: widgets/widget-recommended-series.php:6
+msgid "A list of Video Series."
+msgstr ""
+
+#: widgets/widget-recommended-series.php:9
+msgid "VideoPro - Recommended Series"
+msgstr ""
+
+#: widgets/widget-recommended-series.php:23
+msgid "Recommended Series"
+msgstr ""
+
+#: widgets/widget-recommended-series.php:158
+msgid "Episodes"
+msgstr ""
+
+#: widgets/widget-recommended-series.php:219
+msgid "Video Series slugs/ids:"
+msgstr ""
+
+#: widgets/widget-recommended-series.php:221
+msgid "List of video series, separated by a comma"
+msgstr ""
+
+#: widgets/widget-recommended-series.php:223
+msgid "List by:"
+msgstr ""
+
+#: widgets/widget-recommended-series.php:225
+msgid "Latest Updated"
+msgstr ""
+
+#: widgets/widget-recommended-series.php:226
+msgid "Most Viewed (all time)"
+msgstr ""
+
+#: widgets/widget-recommended-series.php:228
+msgid "How to order Video Series"
+msgstr ""
+
+#: widgets/widget-recommended-series.php:230
+msgid "Count:"
+msgstr ""
+
+#: cactus-video.php:1197
+msgid "Private: Edit Video"
+msgstr ""

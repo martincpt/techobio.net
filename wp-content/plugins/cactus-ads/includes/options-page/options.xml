@@ -1,0 +1,73 @@
+<?xml version='1.0'?>
+<options>
+	<tab label="General" icon="cog">
+		<group label="General" icon="star">
+			<fields label="Enable Ads">
+				<option id="enable-ads" type="select" default="yes">
+					<select value="yes" text="Yes"/>
+					<select value="no" text="No"/>
+				</option>
+				<description>Note: use with care! Showing up extra content on top of YouTube or Vimeo video is violating the terms and policies of those websites</description>
+			</fields>
+		</group>
+		<group label="Close Button" icon="close">
+			<fields label="Clickable after (seconds)">
+				<option id="show-close-button"  type="textfield" width="50" default="5"></option>
+			</fields>
+			<fields label="Position">
+				<option  id="close-button-position" type="select" default="left">
+					<select value="left" text="Left"/>
+					<select value="right" text="Right"/>
+				</option>
+			</fields>
+			<fields label="Text">
+				<option id="close-button-text"  type="textfield" width="400" default="SKIP ADS &gt;&gt;" tooltip=""></option>
+			</fields>
+		</group>
+		<group label="Repeat" icon="repeat">
+			<fields label="Full-width Banner shows up after (seconds)">
+				<option id="full-banner-auto-turn-on-advs" type="textfield" width="50" default="20"></option>
+			</fields>
+			<fields label="Top/Bottom Banner shows up after (seconds)">
+				<option id="top-bottom-banner-auto-turn-on-advs" type="textfield" width="50" default="20"></option>
+			</fields>
+			<fields label="Video Ads plays after (seconds)">
+				<option id="auto-turn-on-advs" type="textfield" width="50" default="20"></option>
+			</fields>
+		</group>
+	</tab>
+	<tab label="Branding" icon="copyright">
+		<group label="General" icon="star">
+			<fields label="Enable Branding">
+				<option  id="enable-brand" type="select" default="yes">
+					<select value="yes" text="Yes"/>
+					<select value="no" text="No"/>
+				</option>
+			</fields>
+		</group>
+		<group label="Logo or Text" icon="copyright">
+			<fields label="Brand Logo" >
+				<option id="ads-logo" type="media"/>
+			</fields>
+			<fields label="Brand Text">
+				<option id="ads-text" type="textfield" width="400" default="" tooltip="Brand Text is used when Logo is not set"></option>
+			</fields>
+		</group>
+		<group label="Appearance" icon="eye">
+			<fields label="Position" >
+				<option id="ads-position" type="select" default="top-right">
+					<select value="top-right" text="Top Right"/>
+					<select value="top-left" text="Top Left"/>
+					<select value="bottom-right" text="Bottom Right"/>
+					<select value="bottom-left" text="Bottom Left"/>
+				</option>
+			</fields>
+			<fields label="Opacity" >
+				<option id="ads-opacity" type="textfield" width="50" default="0.8"></option>
+			</fields>
+			<fields label="Text color">
+				<option  id="ads-text-color" type="color" default="#ffffff"/>
+			</fields>
+		</group>
+	</tab>
+</options>

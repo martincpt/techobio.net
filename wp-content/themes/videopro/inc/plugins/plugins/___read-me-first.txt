@@ -1,0 +1,7 @@
+VideoPro is a plug-and-play theme. It means you only install what you needs.
+
+Features are in plugins. Choose the features you need and install appropriate plugins in "extras" folder. They are optional.
+
+Cactus Video, Video Pro Shortcode are core plugins for the theme to work.
+
+Visual Composer is a premium Page Builder plugin.

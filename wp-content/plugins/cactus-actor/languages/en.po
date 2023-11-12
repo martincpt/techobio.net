@@ -1,0 +1,502 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Cactus Actor Translation\n"
+"POT-Creation-Date: 2016-12-09 16:07+0700\n"
+"PO-Revision-Date: 2016-12-09 16:07+0700\n"
+"Last-Translator: \n"
+"Language-Team: CactusThemes <hi@cactusthemes.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: esc_html__;esc_html_e;__;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SearchPathExcluded-1: includes/options-page\n"
+
+#: actor-functions.php:8
+msgid "In this video"
+msgstr ""
+
+#: actor-functions.php:38
+#, php-format
+msgid "%d VIDEOS"
+msgstr ""
+
+#: ct-actor.php:13
+msgid "General"
+msgstr ""
+
+#: ct-actor.php:43
+msgid "Actor Listing Page"
+msgstr ""
+
+#: ct-actor.php:104
+msgid "Actor Settings"
+msgstr ""
+
+#: ct-actor.php:104
+msgid "Actor Setting Page"
+msgstr ""
+
+#: ct-actor.php:104
+msgid "Save"
+msgstr ""
+
+#: ct-actor.php:200 ct-actor.php:201 ct-actor.php:354
+msgid "Actor"
+msgstr ""
+
+#: ct-actor.php:202 ct-actor.php:203
+msgid "Add New Actor"
+msgstr ""
+
+#: ct-actor.php:204
+msgid "Edit Actor"
+msgstr ""
+
+#: ct-actor.php:205
+msgid "New Actor"
+msgstr ""
+
+#: ct-actor.php:206
+msgid "All Actors"
+msgstr ""
+
+#: ct-actor.php:207
+msgid "View Actor"
+msgstr ""
+
+#: ct-actor.php:208
+msgid "Search Actor"
+msgstr ""
+
+#: ct-actor.php:209
+msgid "No Actor found"
+msgstr ""
+
+#: ct-actor.php:210
+msgid "No Actor found in Trash"
+msgstr ""
+
+#: ct-actor.php:212
+msgid "Video Actor"
+msgstr ""
+
+#: ct-actor.php:243 ct-actor.php:244 shortcode/actor-listing.php:238
+msgid "Tags"
+msgstr ""
+
+#: ct-actor.php:307
+msgid "Most Used"
+msgstr ""
+
+#: ct-actor.php:331
+#, php-format
+msgid "+ %s"
+msgstr ""
+
+#: ct-actor.php:354
+msgid "Add Actors to this video"
+msgstr ""
+
+#: ct-actor.php:358
+msgid "Video Actors"
+msgstr ""
+
+#: ct-actor.php:379
+msgid "Day"
+msgstr ""
+
+#: ct-actor.php:380
+msgid "Month"
+msgstr ""
+
+#: ct-actor.php:381
+msgid "Year"
+msgstr ""
+
+#: ct-actor.php:384
+msgid "Actor Birthday"
+msgstr ""
+
+#: ct-actor.php:391
+msgid "Account Name:"
+msgstr ""
+
+#: ct-actor.php:391
+msgid "Name of Social Account"
+msgstr ""
+
+#: ct-actor.php:392
+msgid "Account Icon:"
+msgstr ""
+
+#: ct-actor.php:392
+msgid "CSS Class Name of Social Account Icon"
+msgstr ""
+
+#: ct-actor.php:393
+msgid "Account Link:"
+msgstr ""
+
+#: ct-actor.php:393
+msgid "URL of Social Account"
+msgstr ""
+
+#: ct-actor.php:399
+msgid "Is Verified Actor?"
+msgstr ""
+
+#: ct-actor.php:402
+msgid "Not verified"
+msgstr ""
+
+#: ct-actor.php:403
+msgid "Verified"
+msgstr ""
+
+#: ct-actor.php:405
+msgid "Show a Verified Icon to the channel title"
+msgstr ""
+
+#: ct-actor.php:407
+msgid "Position:"
+msgstr ""
+
+#: ct-actor.php:407
+msgid "Position/Title of actor"
+msgstr ""
+
+#: ct-actor.php:408
+msgid "Website:"
+msgstr ""
+
+#: ct-actor.php:408 ct-actor.php:409 ct-actor.php:410 ct-actor.php:411
+#: ct-actor.php:412 ct-actor.php:413 ct-actor.php:414 ct-actor.php:415
+#: ct-actor.php:416 ct-actor.php:417 ct-actor.php:418 ct-actor.php:420
+#: ct-actor.php:421 ct-actor.php:422
+msgid "Enter full link to actor profile page"
+msgstr ""
+
+#: ct-actor.php:409
+msgid "Facebook:"
+msgstr ""
+
+#: ct-actor.php:410
+msgid "Instagram:"
+msgstr ""
+
+#: ct-actor.php:411
+msgid "IMDB:"
+msgstr ""
+
+#: ct-actor.php:412
+msgid "Twitter:"
+msgstr ""
+
+#: ct-actor.php:413
+msgid "LinkedIn:"
+msgstr ""
+
+#: ct-actor.php:414
+msgid "Tumblr:"
+msgstr ""
+
+#: ct-actor.php:415
+msgid "Google Plus:"
+msgstr ""
+
+#: ct-actor.php:416
+msgid "Pinterest:"
+msgstr ""
+
+#: ct-actor.php:417
+msgid "YouTube:"
+msgstr ""
+
+#: ct-actor.php:418
+msgid "Flickr:"
+msgstr ""
+
+#: ct-actor.php:419
+msgid "Email:"
+msgstr ""
+
+#: ct-actor.php:419
+msgid "Enter email contact of actor"
+msgstr ""
+
+#: ct-actor.php:420
+msgid "GitHub:"
+msgstr ""
+
+#: ct-actor.php:421
+msgid "Dribbble:"
+msgstr ""
+
+#: ct-actor.php:422
+msgid "VK:"
+msgstr ""
+
+#: ct-actor.php:425 ct-actor.php:430
+msgid "Custom Social Accounts"
+msgstr ""
+
+#: ct-actor.php:435
+msgid "Actor Info"
+msgstr ""
+
+#: includes/Custom-Meta-Boxes-master/class.cmb-meta-box.php:90
+msgid "Are you sure you want to delete this field?"
+msgstr ""
+
+#: includes/Custom-Meta-Boxes-master/classes.fields.php:68
+msgid "Add New"
+msgstr ""
+
+#: includes/Custom-Meta-Boxes-master/classes.fields.php:69
+msgid "Remove Field"
+msgstr ""
+
+#: includes/Custom-Meta-Boxes-master/classes.fields.php:461
+msgid "Add File"
+msgstr ""
+
+#: includes/Custom-Meta-Boxes-master/classes.fields.php:479
+#: includes/Custom-Meta-Boxes-master/classes.fields.php:553
+msgid "Remove"
+msgstr ""
+
+#: includes/Custom-Meta-Boxes-master/classes.fields.php:541
+msgid "Add Image"
+msgstr ""
+
+#: includes/Custom-Meta-Boxes-master/classes.fields.php:1096
+msgid "Type to search"
+msgstr ""
+
+#: includes/Custom-Meta-Boxes-master/classes.fields.php:1423
+msgid "Add New Group"
+msgstr ""
+
+#: includes/Custom-Meta-Boxes-master/classes.fields.php:1424
+msgid "Remove Group"
+msgstr ""
+
+#: includes/Custom-Meta-Boxes-master/classes.fields.php:1623
+msgid "Drag to set the exact location"
+msgstr ""
+
+#: includes/page-templates/actor-listing.php:40
+msgid "Actors"
+msgstr ""
+
+#: includes/page-templates/actor-listing.php:61
+msgid "All"
+msgstr ""
+
+#: includes/page-templates/actor-listing.php:140
+msgid "There isn't any Actors in this category"
+msgstr ""
+
+#: shortcode/actor-listing.php:183
+msgid "VideoPro Actor Listing"
+msgstr ""
+
+#: shortcode/actor-listing.php:187
+msgid "VideoPro"
+msgstr ""
+
+#: shortcode/actor-listing.php:191
+msgid "Thumb size"
+msgstr ""
+
+#: shortcode/actor-listing.php:194
+msgid "Small"
+msgstr ""
+
+#: shortcode/actor-listing.php:195
+msgid "Medium"
+msgstr ""
+
+#: shortcode/actor-listing.php:196
+msgid "Big"
+msgstr ""
+
+#: shortcode/actor-listing.php:198
+msgid "choose thumb size"
+msgstr ""
+
+#: shortcode/actor-listing.php:202
+msgid "Columns"
+msgstr ""
+
+#: shortcode/actor-listing.php:205
+msgid "1 Column"
+msgstr ""
+
+#: shortcode/actor-listing.php:206
+msgid "2 Columns"
+msgstr ""
+
+#: shortcode/actor-listing.php:208
+msgid "number of columns."
+msgstr ""
+
+#: shortcode/actor-listing.php:212
+msgid "Condition"
+msgstr ""
+
+#: shortcode/actor-listing.php:215
+msgid "Latest"
+msgstr ""
+
+#: shortcode/actor-listing.php:216
+msgid "Most popular"
+msgstr ""
+
+#: shortcode/actor-listing.php:217
+msgid "Born today"
+msgstr ""
+
+#: shortcode/actor-listing.php:218
+msgid "Born this month"
+msgstr ""
+
+#: shortcode/actor-listing.php:220
+msgid "choose condition to query actor. Default is latest"
+msgstr ""
+
+#: shortcode/actor-listing.php:231
+msgid "Count"
+msgstr ""
+
+#: shortcode/actor-listing.php:234
+msgid "number of items to query. Default is 6"
+msgstr ""
+
+#: shortcode/actor-listing.php:241
+msgid "tags to query, separated by a comma"
+msgstr ""
+
+#: shortcode/actor-listing.php:245
+msgid "Offset"
+msgstr ""
+
+#: shortcode/actor-listing.php:248
+msgid "number of first items to ignore when querying"
+msgstr ""
+
+#: templates/loop/content-actor.php:32
+#, php-format
+msgid "%d Videos"
+msgstr ""
+
+#: templates/single-actor.php:35
+msgid "Website"
+msgstr ""
+
+#: templates/single-actor.php:39
+msgid "IMDB"
+msgstr ""
+
+#: templates/single-actor.php:43
+msgid "Facebook"
+msgstr ""
+
+#: templates/single-actor.php:46
+msgid "Twitter"
+msgstr ""
+
+#: templates/single-actor.php:49
+msgid "Linkedin"
+msgstr ""
+
+#: templates/single-actor.php:52
+msgid "Tumblr"
+msgstr ""
+
+#: templates/single-actor.php:55
+msgid "Google Plus"
+msgstr ""
+
+#: templates/single-actor.php:58
+msgid "Pinterest"
+msgstr ""
+
+#: templates/single-actor.php:61
+msgid "Instagram"
+msgstr ""
+
+#: templates/single-actor.php:64
+msgid "Flickr"
+msgstr ""
+
+#: templates/single-actor.php:67
+msgid "Youtube"
+msgstr ""
+
+#: templates/single-actor.php:71
+msgid "Email"
+msgstr ""
+
+#: templates/single-actor.php:75
+msgid "Github"
+msgstr ""
+
+#: templates/single-actor.php:78
+msgid "Dribbble"
+msgstr ""
+
+#: templates/single-actor.php:81
+msgid "vk"
+msgstr ""
+
+#: templates/single-actor.php:116
+msgid "Videos"
+msgstr ""
+
+#: templates/single-actor.php:144
+msgid "No videos found"
+msgstr ""
+
+#: widget/actor-list.php:7 widget/actor-list.php:9
+msgid "VideoPro - Actor Listing"
+msgstr ""
+
+#: widget/actor-list.php:131
+#, php-format
+msgid "%d videos"
+msgstr ""
+
+#: widget/actor-list.php:162
+msgid "Title:"
+msgstr ""
+
+#: widget/actor-list.php:166
+msgid "IDs (Specify actor's IDs to show):"
+msgstr ""
+
+#: widget/actor-list.php:170
+msgid "Tags:"
+msgstr ""
+
+#: widget/actor-list.php:174
+msgid "Number of Items:"
+msgstr ""
+
+#: widget/actor-list.php:179
+msgid "Order by"
+msgstr ""
+
+#: widget/actor-list.php:181
+msgid "Most Viewed "
+msgstr ""
+
+#: widget/actor-list.php:182
+msgid "Random"
+msgstr ""

@@ -1,0 +1,94 @@
+.videopro-demo-container #primary, .videopro-demo-container #secondary {
+    display: inline-block;
+}
+
+.videopro-demo-container #primary {
+    width: 100%;
+}
+/*.videopro-demo-container #secondary {
+    width: 18%;
+    position: absolute;
+    margin-left: 10px;
+}*/
+.import-admin-title {
+    background-color: #64BEBE;
+    padding: 10px 10px 10px 40px;
+    color: #fff;
+    position: relative;
+}
+
+.import-admin-title .error, .import-admin-title .notice{color:#333}
+
+.import-admin-title h2 {
+    font-size: 1.8em;
+    color: #fff;
+	position: relative
+}
+
+.import-admin-title h2 .dashicons.dashicons-upload {
+    position: absolute;
+    background: #fff;
+    color: #64bebe;
+    padding: 8px;
+    border-radius: 50%;
+    top: -7px !important;
+    left: 0;
+}
+
+.import-admin-title h2 .text {
+    margin-left: 50px !important;
+}
+
+.videopro-admin-notice {
+    background-color: #6ccac9;
+    padding: 10px 10px 10px 80px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.videopro-admin-notice ul {
+    list-style: disc;
+}
+.videopro-admin-notice ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.demo-admin-title {
+    background-color: #f9f9f9;
+    padding: 10px 10px 10px 40px;
+    color: #fff;
+    position: relative;
+    border: 1px solid #eee;
+}
+
+.demo-admin-title h2 {
+    font-size: 1.8em;
+}
+
+.demo-admin-title h2 .dashicons {
+    position: absolute;
+    background: #0b6d9c;
+    color: #fff;
+    padding: 8px;
+    border-radius: 50%;
+    top: 30%;
+    left: 5%;
+}
+
+.demo-admin-title h2 .text {
+    margin-left: 6%;
+}
+
+.demo-admin-container {
+    padding: 15px 50px 15px 50px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.demo-admin-container:after{
+	content: ' ';
+	display: block;
+	clear: both;
+}

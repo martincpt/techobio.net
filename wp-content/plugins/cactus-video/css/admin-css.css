@@ -1,0 +1,33 @@
+#videopro_video_file .field-title{display:none}
+
+#video_membership_page{}
+.wp-list-table{width:100%; border:1px solid #dadada; border-bottom:none}
+.wp-list-table th{text-align:left}
+.wp-list-table th,.wp-list-table td{padding:15px 5px;border-bottom:1px solid #dadada}
+.wp-list-table tr{background: #FFF;}
+.wp-list-table tr.alternative{}
+.wp-list-table label.check{display:inline-block;padding:0 20px 0 0}
+.wp-list-table td.head{font-weight:bold}
+#video_membership_page .italic{font-style:italic}
+
+#video_membership_page .section td{background:#023046;padding:0 15px}
+#video_membership_page .section td h3{color:#FFF}
+
+#playlist_order_s .cmb-delete-field,
+#playlist_order_s .select2-arrow,
+#playlist_order_s .repeat-field {
+	display: none !important;
+}
+#playlist_order_s .field-item {
+	position: relative;
+}
+#playlist_order_s .field-item:before {
+	content: '';
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 15px;
+	width: calc(100% - 15px);
+	height: 100%;
+	z-index: 99999;
+}

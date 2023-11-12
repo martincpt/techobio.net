@@ -1,0 +1,10 @@
+[05-Feb-2021 03:45:24 America/New_York] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/martslkt/techobio.net/wp-includes/ID3/module.audio.ac3.php on line 626
+[05-Feb-2021 03:45:24 America/New_York] PHP Fatal error:  Uncaught Error: Class 'getid3_handler' not found in /home/martslkt/techobio.net/wp-includes/ID3/module.audio.ac3.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/martslkt/techobio.net/wp-includes/ID3/module.audio.ac3.php on line 18
+[11-Jun-2021 14:08:27 America/New_York] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/martslkt/techobio.net/wp-includes/ID3/module.audio.ac3.php on line 626
+[11-Jun-2021 14:08:27 America/New_York] PHP Fatal error:  Uncaught Error: Class 'getid3_handler' not found in /home/martslkt/techobio.net/wp-includes/ID3/module.audio.ac3.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/martslkt/techobio.net/wp-includes/ID3/module.audio.ac3.php on line 18

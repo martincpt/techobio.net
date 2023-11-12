@@ -1,0 +1,4 @@
+[02-Feb-2021 16:23:27 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/martslkt/techobio.net/wp-content/plugins/hello.php:69
+Stack trace:
+#0 {main}
+  thrown in /home/martslkt/techobio.net/wp-content/plugins/hello.php on line 69

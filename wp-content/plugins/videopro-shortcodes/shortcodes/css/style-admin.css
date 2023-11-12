@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+
+#cactus_alert_shortcode,
+#cactus_button_shortcode,
+#cactus_dropcap_shortcode,
+#cactus_compare_shortcode,
+#cactus_posts_grid_shortcode,
+#cactus_posts_carousel_shortcode,
+#cactus_posts_classic_slider_shortcode,
+#cactus_posts_parallax_shortcode,
+#cactus_posts_slider_shortcode,
+#cactus_smart_content_box_shortcode,
+#cactus_testimonial_shortcode,
+#cactus_posts_thumb_slider_shortcode,
+#cactus_topic_box_shortcode,
+#cactus_icon_box_shortcode,
+#cactus_download_box_shortcode,
+#cactus_divider_shortcode,
+#cactus_live_content_shortcode,
+#cactus_tooltip_shortcode,
+#cactus_tab_shortcode,
+#cactus_compare_table_shortcode {
+	display:none;
+}
+
+i.mce-ico.mce-i-icons {
+	background:url(../img/post-grid.png) no-repeat center;
+}
+.mce-container[aria-label="Shortcode"] {
+overflow-y: scroll;
+overflow-x: hidden;
+max-height: 80%;
+top: 10% !important;
+width:350px !important;
+}
+
+/* visual shortcode */
+.icon-button{ background-image:url(../img/vc/button.png) !important; background-repeat: initial !important;}
+.icon-comparetable { background-image:url(../img/vc/compare-table.png) !important; background-repeat: initial !important;}
+.icon-comparetable-row { background-image:url(../img/vc/ico-compare-table-row.png) !important; background-repeat: initial !important;}
+.icon-divider{ background-image:url(../img/vc/divider.png) !important; background-repeat: initial !important;}
+.icon-iconbox{ background-image:url(../img/vc/icon-box.png) !important; background-repeat: initial !important;}
+.icon-post-slider { background-image:url(../img/vc/post-slider.png) !important; background-repeat: initial !important;}
+.icon-smart-content-box { background-image:url(../img/vc/smart-content-box.png) !important; background-repeat: initial !important;}
+.icon-promobox{ background-image:url(../img/vc/promobox.png) !important; background-repeat: initial !important;}
+.icon-contentbox{ background-image:url(../img/vc/content-box.png) !important; background-repeat: initial !important;}
+
+.icon-actor{ background-image:url(../img/vc/Actor-Listing.png) !important; background-repeat: initial !important;}
+.icon-series{ background-image:url(../img/vc/Series-Listing.png) !important; background-repeat: initial !important;}
+.icon-channel{ background-image:url(../img/vc/Channel-Listing.png) !important; background-repeat: initial !important;}
+.icon_comparetable{ background-image:url(../img/vc/c_comparetable.png) !important; background-repeat: initial !important;}
+.icon_column{ background-image:url(../img/vc/c_column.png) !important; background-repeat: initial !important;}
+.icon_row{ background-image:url(../img/vc/c_row.png) !important; background-repeat: initial !important;}

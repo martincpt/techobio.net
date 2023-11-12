@@ -1,0 +1,665 @@
+<?xml version='1.0'?> 
+<options>
+	<tab label="Video Archives" icon="cog">
+		<group>
+			<fields label="Enable Lightbox for Video Post">
+				<option id="enable_archives_lightbox" type="select" default="1" tooltip="" >
+					<select value="1" text="On"/>
+					<select value="0" text="Off"/>
+				</option>
+				<description>Enable Lightbox for Video Post in archives</description>
+			</fields>
+			<fields label="Enable Screenshots Preview for Video Post">
+				<option id="enable_archives_screenshot_preview" type="select" default="0" tooltip="" >
+					<select value="1" text="On"/>
+					<select value="0" text="Off"/>
+				</option>
+				<description>Enable Screenshots Preview for Video Post in archives</description>
+			</fields>
+		</group>
+	</tab>
+	<tab label="Video Post" icon="film">
+		<group label="Appearance Settings" icon="desktop">
+			<fields label="Player Background">
+				<option id="video_appearance_bg" type="background" width="400" default='{"background-color":"#303030"}'></option>
+				<description>Select default background for video player</description>
+			</fields>
+            <fields label="Video Header">
+				<option id="video_header" type="select" default="1">
+					<select value="1" text="Video Player"/>
+					<select value="2" text="Thumbnail Image"/>
+				</option>
+				<description>Choose to display Thumbnail Image or Video Player when users visit single post. You can override this setting in each post</description>
+			</fields>
+			<fields label="Animated Icon">
+				<option id="image_header_play_icon_style" type="select" default="1">
+					<select value="1" text="Just static icon"/>
+					<select value="2" text="Animated Icon"/>
+				</option>
+				<description>Toggle Animated Version of Icon Play</description>
+				<condition expression="video_header:is(2)"></condition>
+			</fields>
+		</group>
+		<group label="AutoFetch Data" icon="gears">
+			<fields label="Auto Fetch Data">
+				<option id="auto_get_info" type="checkbox" default="">
+					<select value="1" text="Fetch Video Title"/>
+					<select value="2" text="Fetch Video Description"/>
+					<select value="3" text="Fetch Video Tags (only work with Vimeo and Dailymotion)"/>
+					<select value="4" text="Fetch Video Duration, Views, Likes, Comments count"/>
+				</option>
+				<description>This is an admin feature when adding new video post. Select which data to auto-fetch from video network (support YouTube, Vimeo and Dailymotion) when entering video URL</description>
+			</fields>
+			<fields label="Auto check 'Do Not Fetch' after the first time">
+				<option id="disable_autofetch_after_first_time" type="select" default="on" tooltip="" >
+					<select value="on" text="On"/>
+					<select value="off" text="Off"/>
+				</option>
+				<description>Automatically check "Do Not Fetch" after the first time a video is auto-fetched. This helps prevent wiping out your updated data</description>
+			</fields>
+			<fields label="Google API Key">
+				<option id="google_api_key" type="textfield" width="400" default=""></option>
+				<description>Fill your Google API key to fetch data from Youtube. Check this guide: https://developers.google.com/youtube/v3/getting-started</description>
+			</fields>
+			<fields label="Use Video Data from Network">
+				<option id="use_video_network_data" type="select" default="on" tooltip="" >
+					<select value="on" text="On"/>
+					<select value="off" text="Off"/>
+				</option>
+				<description>Add Video Data (views, likes, dislikes) from network (only support YouTube, Vimeo, Dailymotion) to site’s data. Please note that these values will be used for any queries such as Order By</description>
+			</fields>
+			<fields label="Use Video Comment Count from Network">
+				<option id="use_video_network_comment_count" type="select" default="off" tooltip="" >
+					<select value="on" text="On"/>
+					<select value="off" text="Off"/>
+				</option>
+				<description>Add Video Comment Count from network (only support YouTube, Vimeo, Dailymotion) to site’s data. Please note that these values will be used for any queries such as Order By</description>
+			</fields>
+			<fields label="Synchronize Views Count">
+				<option id="synchronize_views_count" type="select" default="off" tooltip="" >
+					<select value="on" text="On"/>
+					<select value="off" text="Off"/>
+				</option>
+				<description>If you turn on this option, you don't have to manually fetch views count by saving posts. Your site will automatically synchronize views count from networks every time you open a single video post (only support YouTube, Vimeo, Dailymotion). However, as it updates views count from network frequently, site performance may be affected.</description>
+			</fields>
+		</group>
+		<group label="Video Player" icon="video-camera">
+			<fields label="Player for Video File">
+				<option id="single_player_video" type="select" default="mediaelement" tooltip="" >
+					<select value="mediaelement" text="WordPress Native Player: MediaElement"/>
+					<select value="videojs" text="VideoJS - HTML5 Video Player"/>
+					<select value="flowplayer" text="FV FlowPlayer"/>
+					<select value="jwplayer_7" text="JWPlayer 7"/>
+					<select value="elite_player" text="Elite Player (From Elite Plugin)"/>
+				</option>
+				<description>If you choose to use Elite Player, this player will also be used to play videos from youtube and vimeo</description>
+			</fields>
+			<fields label="Use JW Player Settings">
+				<option id="use_jwplayer_settings" type="select" default="0" tooltip="" >
+					<select value="0" text="No"/>
+					<select value="1" text="Yes"/>
+				</option>
+				<description>Use JW Player Settings instead of default VideoPro video settings</description>
+				<condition expression="single_player_video:is(jwplayer_7)"></condition>
+			</fields>
+			<fields label="Auto Play Video">
+				<option id="auto_play_video" type="select" default="1" tooltip="" >
+					<select value="1" text="On"/>
+					<select value="0" text="Off"/>
+				</option>
+				<description></description>
+			</fields>
+			<fields label="Replay Video">
+				<option id="auto_load_next_video" type="select" default="2" tooltip="" >
+					<select value="1" text="All Videos and Stop "/>
+					<select value="2" text="All Videos and First"/>
+					<select value="3" text="Current Video "/>
+					<select value="4" text="Off"/>
+				</option>
+				<description></description>
+			</fields>
+			<fields label="Delay before auto-next">
+				<description>Number of seconds to wait before auto-next videos. By default, it will wait 1 second before playing next</description>
+				<option id="delay_video" label="Delay" type="textfield" width="100" default=""></option>
+				<condition expression="auto_load_next_video:not(4)"/>
+				<!-- Expression usage: 
+1. Do not support () expression yet
+2. Use of "and" and "or" operators for multiple conditional expressions
+3. In this example, "auto_load_next_video" is conditional element ID; "not" and "is" are operators for single expression; "4" is value of element
+				-->
+			</fields>	
+			<fields label="Next Videos by">
+				<option id="next_prev_same" type="select" default="cat" tooltip="" >
+					<select value="cat" text="Same categories "/>
+					<select value="tag" text="Same tags"/>
+					<select value="list" text="Same Playlist"/>
+                    <select value="series" text="Same Series"/>
+                    <select value="channel" text="Same Channel"/>
+				</option>
+				<description>Choose how to navigate videos</description>
+			</fields>
+			
+			<fields label="Next Videos only">
+				<option id="next_video_only" type="select" default="on" tooltip="" >
+					<select value="on" text="On"/>
+					<select value="off" text="Off"/>
+				</option>
+				<description>Choose to navigate through video posts only, or other posts</description>
+			</fields>
+			
+			<fields label="Next Videos order">
+				<option id="auto_load_next_prev" type="select" default="0" tooltip="" >
+					<select value="0" text="Newer Video"/>
+					<select value="1" text="Older Video"/>
+				</option>
+				<description>Choose how to load next videos</description>
+			</fields>
+			
+			<fields label="Auto Next button for Visitors">
+				<option id="user_control_next_video" type="select" default="0" tooltip="" >
+					<select value="0" text="Disable"/>
+					<select value="1" text="Enable"/>
+				</option>
+				<description>Only avaiable for YouTube, Vimeo and Dailymotion videos</description>
+			</fields>
+            
+            <fields label="Video Player Light On/Off">
+				<option id="video_light_on" type="select" default="0" tooltip="" >
+					<select value="0" text="Disable"/>
+					<select value="1" text="Enable"/>
+				</option>
+				<description>Enable the Light On/Off button for Video Player</description>
+			</fields>
+		</group>
+		<group label="Spam Report" icon="flag">			
+			<fields label="Spam Flag">
+				<option id="spam_flag" type="select" default="on" tooltip="" >
+					<select value="on" text="On (Both Users and Guests)"/>
+                    <select value="on2" text="On (Only Logged-In Users)"/>
+					<select value="off" text="Off"/>
+				</option>
+				<description>Enable Spam Flag to allow users to report broken videos.</description>
+			</fields>
+			<fields label="Spam Flag - Contact Form 7 ID">
+				<description>ID of a Contact Form 7 to receive video report. Requires Contact Form 7 plugin. (use either Contact Form 7 or GravityForms)</description>
+				<option id="spam_flag_contactform" label="" type="textfield" width="100" default=""></option>
+				<condition expression="spam_flag:not(off)"/>
+			</fields>
+			<fields label="Spam Flag - GravityForms ID">
+				<description>ID of a Gravity Form to receive video report. Requires GravityForms plugin. (use either Contact Form 7 or GravityForms)</description>
+				<option id="spam_flag_gravityform" label="" type="textfield" width="100" default=""></option>
+				<condition expression="spam_flag:not(off)"/>
+			</fields>
+		</group>
+		<group label="Other Settings" icon="plus-square">	
+			<fields label="Video Toolbar - &quot;WTI Like&quot; button">
+				<option id="videotoolbar_show_like_button" type="select" default="on" tooltip="" >
+					<select value="on" text="On"/>
+					<select value="off" text="Off"/>
+				</option>
+				<description>Enable "WTI Like" button in the video toolbar. Require "WTI Like Post" plugin installed</description>
+			</fields>
+			<fields label="Video Toolbar - &quot;Sharing&quot; button">
+				<option id="videotoolbar_show_sharing_button" type="select" default="on" tooltip="" >
+					<select value="on" text="On"/>
+					<select value="off" text="Off"/>
+				</option>
+				<description>Enable "Sharing" button in the video toolbar. Social Networks are configurable in Theme Options</description>
+			</fields>
+			<fields label="Video Toolbar - &quot;Facebook Like&quot; button">
+				<option id="videotoolbar_show_fblike_button" type="select" default="on" tooltip="" >
+					<select value="on" text="On"/>
+					<select value="off" text="Off"/>
+				</option>
+				<description>Enable "Facebook Like" button in the video toolbar</description>
+			</fields>
+            <fields label="Video Toolbar - &quot;Watch Later&quot; button">
+				<option id="videotoolbar_show_watch_later_button" type="select" default="off" tooltip="" >
+					<select value="on" text="On"/>
+					<select value="off" text="Off"/>
+				</option>
+				<description>Enable "Watch Later" button in the video toolbar and other places</description>
+			</fields>
+			<fields label="Video Toolbar - &quot;Google+&quot; button">
+				<option id="videotoolbar_show_google_button" type="select" default="on" tooltip="" >
+					<select value="on" text="On"/>
+					<select value="off" text="Off"/>
+				</option>
+				<description>Enable "Google+" button in the video toolbar</description>
+			</fields>
+			<fields label="Video Toolbar - &quot;More Videos&quot; button">
+				<option id="show_morevideo" type="select" default="on" tooltip="" >
+					<select value="on" text="On"/>
+					<select value="off" text="Off"/>
+				</option>
+				<description>Show "More Videos" option</description>
+			</fields>
+			
+			<fields label="&quot;More Videos&quot; by">
+				<option id="morevideo_by" type="select" default="cat" tooltip="" >
+					<select value="list" text="Same Playlist "/>
+					<select value="tag" text="Same Tags"/>
+					<select value="cat" text="Same Categories"/>
+					<select value="series" text="Same Series"/>
+                    <select value="channel" text="Same Channel"/>
+					<select value="tax" text="Same Custom Taxonomy "/>
+				</option>
+				<condition expression="show_morevideo:not(off)"/>
+				<description>Select condition for "More Videos" </description>
+			</fields>
+			<fields label="&quot;More Videos&quot; - custom taxonomy">
+				<description>Enter name of Custom Taxonomy to query more videos. Videos having same taxonomies will be queries</description>
+				<option id="morevideo_tax" label="" type="textfield" width="400" default=""></option>
+				<condition expression="morevideo_by:is(tax)"/>
+			</fields>
+			<fields label="Hide About Author">
+				<option id="video_hide_about_author" type="select" default="off" tooltip="" >
+					<select value="off" text="Yes"/>
+                    <select value="on" text="No"/>
+				</option>
+				<description>Hide "About Author" box for video posts</description>
+			</fields>
+
+			<fields label="Video Screenshots">
+				<option id="video_screenshots" type="select" default="simple" tooltip="" >
+					<select value="" text="Disabled"/>
+					<select value="simple" text="Simple List"/>
+					<select value="lightbox" text="Lightbox Gallery"/>
+				</option>
+				<description>Enable "Video Screenshot" feature</description>
+			</fields>			
+			<fields label="Video Floating">
+				<option id="video_floating" type="select" default="off" tooltip="" >
+					<select value="off" text="Disabled"/>
+					<select value="on" text="Enabled"/>
+				</option>
+				<description>Enable "Video Floating" feature. Video Player will stick to the page view when users scroll the page</description>
+			</fields>
+			<fields label="Video Floating - Position">
+				<option id="video_floating_position" type="select" default="topright" tooltip="" >
+					<select value="topright" text="Top - Right"/>
+					<select value="bottomright" text="Bottom - Right"/>
+				</option>
+				<description>Choose position of the sticky Video Player</description>
+				<condition expression="video_floating:is(on)"/>
+			</fields>
+			
+			<fields label="Show &quot;More Content&quot;">
+				<option id="video_more_content" type="select" default="on" tooltip="" >
+					<select value="on" text="On"/>
+					<select value="off" text="Off"/>
+				</option>
+				<description>Show/Hide "More Content" button. This button is used to shrink long content in posts</description>
+			</fields>
+            
+            <fields label="Share video on facebook:">
+				<option id="play_on_facebook" type="select" default="0" tooltip="" >
+					<select value="1" text="Play video on Facebook"/>
+					<select value="0" text="Link back to Video Post"/>
+				</option>
+				<description>Action when a shared Video Post is clicked on Facebook</description>
+			</fields>
+            
+            <fields label="Use Video Secure URL">
+				<option id="video_secure_url" type="select" default="off" tooltip="" >
+					<select value="on" text="Video URL is secured (https)"/>
+					<select value="off" text="Video URL is not secured (http)"/>
+				</option>
+				<description>Add &lt;og:video:secure_url&gt; metadata to header</description>
+			</fields>
+            
+            <fields label="Video On-Page Marked Up HTML">
+				<option id="video_markedup_html" type="select" default="off" tooltip="" >
+					<select value="on" text="Yes"/>
+					<select value="off" text="No"/>
+				</option>
+				<description>Print out marked-up HTML for VideoObject. This helps Google to display video information in the results page</description>
+			</fields>
+			<fields label="Share embeded code for Video">
+				<option id="video_embed_code" type="select" default="off" tooltip="" >
+					<select value="on" text="Yes"/>
+					<select value="off" text="No"/>
+				</option>
+				<description>Generate Video Embed Code for sharing</description>
+			</fields>
+		</group>
+	</tab>
+	<tab label="Youtube Settings" icon="youtube">
+		<group>
+			<fields label="Related videos">
+				<description>Display related videos at the end of the video</description>
+				<option id="onoff_related_yt" type="select" default="1" tooltip="" >
+					<select value="1" text="Hide"/>
+					<select value="0" text="Show"/>
+				</option>
+				<description></description>
+			</fields>
+			<fields label="Use HTML5 player">
+				<description>Use HTML5 player to play YouTube videos</description>
+				<option id="onoff_html5_yt" type="select" default="0" tooltip="" >
+					<select value="0" text="No"/>
+					<select value="1" text="Yes"/>
+				</option>
+				<description></description>
+			</fields>
+			<fields label="Show Video Info on player">
+				<option id="onoff_info_yt" type="select" default="0" tooltip="" >
+					<select value="0" text="Show"/>
+					<select value="1" text="Hide"/>
+				</option>
+				<description></description>
+			</fields>
+			<fields label="Remove annotations on video">
+				<option id="remove_annotations" type="select" default="0" tooltip="" >
+					<select value="0" text="Yes"/>
+					<select value="1" text="No"/>
+				</option>
+				<description></description>
+			</fields>
+			<fields label="Force using Embed Code">
+				<option id="using_yout_param" type="select" default="0" tooltip="" >
+					<select value="0" text="No"/>
+					<select value="1" text="Yes"/>
+				</option>
+				<description>When using Embed Code, some features cannot work such as "Auto Next Videos"</description>
+			</fields>
+            
+            <fields label="Force using JWPlayer 7">
+				<option id="youtube_force_jwplayer7" type="select" default="0" tooltip="" >
+					<select value="0" text="No"/>
+					<select value="1" text="Yes"/>
+				</option>
+				<description>Force using JWPlayer 7 for YouTube videos</description>
+			</fields>
+			
+			<fields label="Allow FullScreen">
+				<option id="allow_full_screen" type="select" default="1" tooltip="" >
+					<select value="1" text="Yes"/>
+					<select value="0" text="No"/>
+				</option>
+				<description></description>
+			</fields>
+			<fields label="Allow Networking">
+				<option id="allow_networking" type="select" default="1" tooltip="" >
+					<select value="1" text="Yes"/>
+					<select value="0" text="No"/>
+				</option>
+				<description></description>
+			</fields>
+			<fields label="Allow Interactive Videos">
+				<option id="interactive_videos" type="select" default="1" tooltip="" >
+					<select value="1" text="Disable"/>
+					<select value="0" text="Enable"/>
+				</option>
+				<description></description>
+			</fields>
+			<fields label="iOS Player Inline">
+				<option id="ios_player_inline" type="select" default="1" tooltip="" >
+					<select value="1" text="Inline"/>
+					<select value="0" text="Fullscreen"/>
+				</option>
+				<description>This parameter controls whether videos play inline or fullscreen in an HTML5 player on iOS</description>
+			</fields>
+		</group>
+	</tab>
+	<tab label="Video Series" icon="fast-forward">
+		<group>
+			<fields label="Enable Video Series ">
+				<option id="enable_video_seri" type="select" default="1" tooltip="" >
+					<select value="1" text="On"/>
+					<select value="0" text="Off"/>
+				</option>
+				<description>Enable Video Series feature</description>
+			</fields>
+			<fields label="Video Series Slug">
+				<option id="series_slug" type="textfield" width="400" default="video-series"></option>
+				<description>Change Video Series slug. Remember to save the permalink settings again in Settings > Permalinks</description>
+			</fields>
+            <fields label="Video Series Order 1">
+				<option id="video_series_order_1" type="select" default="DESC" tooltip="" >
+					<select value="DESC" text="Descending (Biggest to smallest)"/>
+					<select value="ASC" text="Ascending (Smallest to biggest)"/>
+				</option>
+				<description>Choose order of videos in Single Series page (According to value specify in "Order in series" field) </description>
+			</fields>
+            <fields label="Video Series Order 2">
+				<option id="video_series_order_2" type="select" default="ASC" tooltip="" >
+					<select value="DESC" text="Descending (Biggest to smallest)"/>
+					<select value="ASC" text="Ascending (Smallest to biggest)"/>
+				</option>
+				<description>Choose order of videos in "Episodes" listing in single Video page (According to value specify in "Order in series" field)</description>
+			</fields>
+            <fields label="Play All From">
+				<option id="video_series_play_all_from" type="select" default="1" tooltip="" >
+					<select value="1" text="First video in series"/>
+					<select value="2" text="Latest video in series"/>
+				</option>
+				<description>Which video to play first when clicking on "Play All" videos in series</description>
+			</fields>
+			<fields label="Series Listing Style in Single Video">
+				<option id="series_single_style" type="select" default="1" tooltip="" >
+					<select value="1" text="Links"/>
+					<select value="2" text="Select box"/>
+				</option>
+				<description>Choose Series listing style in single video</description>
+			</fields>
+			<fields label="Limit Height for too many item">
+				<option id="series_limit_box" type="select" default="0" tooltip="" >
+					<select value="0" text="Off"/>
+					<select value="1" text="On"/>
+				</option>
+				<description>Limit Height for select box</description>
+			</fields>
+		</group>
+	</tab>
+	
+	<tab label="Front-end Post Submission" icon="users">
+		<group>
+			<fields label="Enable">
+				<option id="user_submit" type="select" default="0" tooltip="" >
+					<select value="0" text="Disable"/>
+					<select value="1" text="Enable"/>
+				</option>
+				<description>Enable Front-end Post Submission feature</description>
+			</fields>
+			<fields label="Permission to Submit">
+				<option id="only_user_submit" type="select" default="0" tooltip="" >
+					<select value="0" text="All Visitors"/>
+					<select value="1" text="All Users"/>
+					<select value="2" text="Only Admin"/>
+				</option>
+				<description>Select whether only logged-in users can submit or not</description>
+			</fields>
+			
+			<fields label="Submit Button - Label">
+				<description>Enter text you want to show</description>
+				<option id="text_bt_submit" label="" type="textfield" width="400" default=""></option>
+			</fields>
+			
+			<fields label="Submit Button - Background Color">
+				<description></description>
+				<option id="bg_bt_submit" label="" type="color" width="400" default="D9251D"></option>
+			</fields>
+			<fields label="Submit Button - Text Color">
+				<description></description>
+				<option id="color_bt_submit" label="" type="color" width="400" default="ffffff"></option>
+			</fields>
+			
+			<fields label="Submit Button - Background Hover Color">
+				<description></description>
+				<option id="bg_hover_bt_submit" label="" type="color" width="400" default="999999"></option>
+			</fields>
+			
+			<fields label="Submit Button - Text Hover Color">
+				<description></description>
+				<option id="color_hover_bt_submit" label="" type="color" width="400" default="ffffff"></option>
+			</fields>
+			
+			<fields label="Default Status">
+				<description></description>
+				<option id="user_submit_status" label="" type="select" width="400" default="pending">
+					<select value="pending" text="Pending"/>
+					<select value="publish" text="Publish"/>
+				</option>
+			</fields>
+			<fields label="Default Post Format">
+				<description></description>
+				<option id="user_submit_format" label="" type="select" width="400" default="">
+					<select value="video" text="Video"/>
+					<select value="standard" text="Standard"/>
+				</option>
+			</fields>
+            <fields label="Auto-Fetch Data">
+				<description>Auto-fetch data for known video sources (YouTube, Vimeo, Dailymotion)</description>
+				<option id="user_submit_auto_fetch" label="" type="select" width="400" default="0">
+					<select value="0" text="No"/>
+					<select value="1" text="Yes"/>
+				</option>
+			</fields>
+            <fields label="Post Title Prefix">
+				<description>Add a prefix to post title so you know which one is submitted via front-end</description>
+				<option id="user_submit_title_prefix" label="" type="textfield" width="400" default=""></option>
+			</fields>
+			<fields label="Exclude Category from Categories List">
+				<description>Enter IDs of categories that you don't want to be displayed in category checkboxes list (ex: "1,68,86")</description>
+				<option id="user_submit_cat_exclude" label="" type="textfield" width="400" default=""></option>
+			</fields>
+			
+			<fields label="Categories Appearance">
+				<description>To limit user to choose one category only</description>
+				<option id="user_submit_cat_radio" label="" type="select" width="400" default="off">
+					<select value="on" text="Radio"/>
+					<select value="off" text="Checkbox"/>
+                    <select value="dropdown" text="Dropdown"/>
+				</option>
+			</fields>
+			<fields label="Limit number of tags that users can enter">
+				<description>Use 0 for unlimited</description>
+				<option id="user_submit_limit_tag" label="" type="textfield" width="400" default=""></option>
+			</fields>
+            
+            <fields label="Exclude Channels from Channels List">
+				<description>Enter IDs of channels that you don't want to be displayed in channel checkboxes list (ex: "1,68,86")</description>
+				<option id="user_submit_channel_exclude" label="" type="textfield" width="400" default=""></option>
+			</fields>
+			
+			<fields label="Channels Appearance">
+				<description>To limit user to choose one channel only</description>
+				<option id="user_submit_channel_radio" label="" type="select" width="400" default="off">
+					<select value="on" text="Radio"/>
+					<select value="off" text="Checkbox"/>
+                    <select value="dropdown" text="Dropdown"/>
+				</option>
+			</fields>
+			
+			<fields label="Owner's Channel Only">
+				<description>Only list Channels of which the current logged-in user is owner. This option should be used only when 'Login Required' option is set to 'Yes'</description>
+				<option id="owner_channel_only" label="" type="select" default="0" width="400">
+					<select value="0" text="No"/>
+					<select value="1" text="Yes"/>
+				</option>
+				<condition expression="only_user_submit:not(0)"/>
+			</fields>
+            
+            <fields label="Exclude Playlists from Playlists List">
+				<description>Enter IDs of playlists that you don't want to be displayed in playlist checkboxes list (ex: "1,68,86")</description>
+				<option id="user_submit_playlist_exclude" label="" type="textfield" width="400" default=""></option>
+			</fields>
+			
+			<fields label="Playlists Appearance">
+				<description>To limit user to choose one playlist only</description>
+				<option id="user_submit_playlist_radio" label="" type="select" width="400" default="off">
+					<select value="on" text="Radio"/>
+					<select value="off" text="Checkbox"/>
+                    <select value="dropdown" text="Dropdown"/>
+				</option>
+			</fields>
+			
+			<fields label="Owner's Playlist Only">
+				<description>Only list Playlists of which the current logged-in user is owner. This option should be used only when 'Login Required' option is set to 'Yes'</description>
+				<option id="owner_playlist_only" label="" type="select" default="0" width="400">
+					<select value="0" text="No"/>
+					<select value="1" text="Yes"/>
+				</option>
+				<condition expression="only_user_submit:not(0)"/>
+			</fields>
+			
+			<fields label="Notification">
+				<description>Send notification email to user when post is published</description>
+				<option id="user_submit_notify" label="" type="select" width="400" default="1">
+					<select value="1" text="Enable"/>
+					<select value="0" text="Disable"/>
+				</option>
+			</fields>
+            
+            <fields label="Fix Popup Height">
+				<description>Fix Submission Popup Height and make it scrollable</description>
+				<option id="user_submit_scrollable" label="" type="select" width="400" default="0">
+					<select value="0" text="No"/>
+					<select value="1" text="Yes"/>
+				</option>
+			</fields>
+            
+            <fields label="Set Popup Height">
+				<description>Enter limit height of Submission Popup, in pixels (with "px" at the end)</description>
+				<option id="user_submit_popupheight" label="" type="textfield" width="400" default="500"></option>
+                <condition expression="user_submit_scrollable:is(1)"/>
+			</fields>
+            
+            <fields label="Close Modal">
+				<description>Close Popup Forms when clicking outside the content</description>
+				<option id="user_submit_closemodal" label="" type="select" width="400" default="0">
+					<select value="0" text="No"/>
+					<select value="1" text="Yes"/>
+				</option>
+			</fields>
+
+			<fields label="Redirect After Post Submission">
+				<option id="redirect_after_submission" type="select" default="1">
+					<select value="none" text="Default"/>
+					<select value="submitted_post" text="Redirect to Submitted Post"/>
+					<select value="custom_url" text="Redirect to Custom URL"/>
+				</option>
+				<description>Specify how to redirect post after submitting post from front-end via submit button</description>
+			</fields>
+			<fields label="Custom URL to Redirect">
+				<description>Specify URL you want to redirect to after submitting post from front-end via submit button</description>
+				<condition expression="redirect_after_submission:is(custom_url)"></condition>
+				<option id="redirect_url_aftersubmit" label="" type="textfield" width="400" default=""></option>
+			</fields>
+            
+		</group>
+	</tab>
+    <tab label="Subscription" icon="eye">
+		<group label="Subscribe Button" icon="play-circle">
+            <fields label="Enable Subscription">
+				<description>Enable Author Subscription feature</description>
+				<option id="author_subscription" label="" type="select" width="400" default="off">
+					<select value="on" text="Enable"/>
+					<select value="off" text="Disable"/>
+				</option>
+			</fields>
+			<fields label="Action">
+				<option id="subscribe-button-action" type="select" default="default">
+					<select value="default" text="Require Logging In. Use default WordPress Login page"/>
+					<select value="custom_url" text="Require Logging In. Use custom Login URL"/>
+					<select value="popup" text="Require Loggin In. Open popup"/>
+				</option>
+				<description>Choose action for "Subscribe Button". This is the action to subscribe Authors. For Channel Subscription, go to "Video Channels" settings</description>
+                <condition expression="author_subscription:is(on)"/>
+			</fields>
+			<fields label="Custom URL">
+				<option id="subscribe-button-url" type="textfield" width="500" default=""></option>
+				<condition expression="subscribe-button-action:is(custom_url)"/>
+				<description>Enter custom Login URL if users need to login</description>
+                <condition expression="author_subscription:is(on)"/>
+			</fields>
+			<fields label="Popup Content">
+				<option id="subscribe-button-popup" type="textarea" cols="100" rows="10" default=""></option>
+				<condition expression="subscribe-button-action:is(popup)"/>
+				<description>Enter HTML content for the Login Popup. Using shortcode is possible</description>
+                <condition expression="author_subscription:is(on)"/>
+			</fields>
+		</group>
+	</tab>
+</options>

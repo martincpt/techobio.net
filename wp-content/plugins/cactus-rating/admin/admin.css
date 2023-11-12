@@ -1,0 +1,147 @@
+#cactus-rating-form .input_hidden {
+    position: absolute;
+    left: -99999px;
+}
+
+#cactus-rating-form .image-select .selected {
+    background-color: #f8f8f8;
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+	color: #04b6fc;
+	text-shadow:0px 1px 0px rgba(255,255,255,.6)
+}
+
+#cactus-rating-form .image-select label {
+    display: inline-block;
+    cursor: pointer;
+	padding: 5px 10px;
+	border-radius: 3px;
+	text-align:center;
+	margin-right:10px;
+}
+#cactus-rating-form .image-select label:hover{
+	color: #04b6fc;
+	box-shadow: 0px 1px 1px rgba(0,0,0,.2);
+	background:#fff;
+}
+
+/*style*/
+.cactus-rating-setting-page *{
+	transition: all linear 0.1s;
+}
+.cactus-rating-setting-page{
+	margin-top:10px;
+	//border:solid 1px #04b6fc;
+	box-shadow:0px 1px 2px rgba(0,0,0,.1);
+	-webkit-box-shadow:0px 2px 8px rgba(0,0,0,.2);
+	border-radius:3px;
+	-webkit-border-radius: 3px;
+	color:#555;
+	overflow:hidden;
+}
+.cactus-rating-head{
+	background:#04b6fc;
+	margin:0;
+	padding:10px;
+	color:#fff;
+	text-shadow:0px 1px 2px rgba(0,0,0,.1);
+	font-weight:100;
+}
+.cactus-rating-setting-content{
+	padding:15px;
+}
+.cactus-rating-setting-page  h2.option-group{
+	color:#555;
+	font-weight:100;
+	font-size:16px;
+	line-height:20px;
+	margin: 5px 0 5px 5px;
+	padding:10px 0 5px;
+	border-bottom:solid 1px #eee;
+}
+.cactus-rating-setting-page .form-group{
+	margin:5px;
+	padding:10px;
+}
+.cactus-rating-setting-page .form-group:hover,.cactus-rating-setting-page tr:hover{
+	background: #fdfdfd;
+	border-right: solid 1px #04b6fc;
+}
+.cactus-rating-setting-page .form-label{
+	float:left;
+	width:200px;
+	text-align:right;
+	vertical-align:middle;
+}
+.cactus-rating-setting-page .form-control{
+	margin-left:215px;
+}
+.cactus-rating-setting-page select, .cactus-rating-setting-page input[type="text"]{
+	height:30px;
+	min-width:150px;
+	line-height:30px;
+}
+.cactus-rating-setting-page select.mini, .cactus-rating-setting-page input[type="text"].mini, .cactus-rating-setting-page input[type="number"].mini{
+	width:55px;
+	min-width:55px;
+}
+.cactus-rating-setting-page input[type="number"]{
+	height:28px;
+}
+.cactus-rating-setting-page .button{
+	background:#04b6fc;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,.1);
+	box-shadow: 0 1px 0 rgba(0,0,0,.1);
+	border: none;
+	color:#fff;
+	-webkit-transition: all .218s;
+	transition: all .218s;
+	cursor:pointer;
+	padding:1px 12px;
+	line-height:32px;
+	height:32px;
+	text-decoration:none;
+	display: inline-block;
+	text-shadow:none;
+}
+.cactus-rating-setting-page .button:hover{
+	-webkit-box-shadow: inset 0 -2px 0 rgba(0,0,0,.27);
+	box-shadow: inset 0 -2px 0 rgba(0,0,0,.27);
+	background:#06a9e9;
+	text-decoration:none;
+	text-shadow:0 -1px rgba(0,0,0,0.2);
+	color:#fff;
+}
+.cactus-rating-setting-page .button#ecs-generate{
+	background:#999;
+}
+.cactus-rating-setting-page .button:active{
+	background:#079ed9;
+	-webkit-box-shadow: inset 0 2px 0 rgba(0,0,0,.27);
+	box-shadow: inset 0 2px 0 rgba(0,0,0,.27);
+}
+input.color{
+	border:solid 1px #ddd;
+	border-radius:3px;
+	line-height:28px;
+	padding:0 0 0 5px;
+	margin:0;
+	width:50px;
+	height:30px
+}
+.checkbox-item{
+	margin: 0 12px 0 0;
+	display:inline-block;
+	min-width:150px;
+}
+/*mce button*/
+.mce-toolbar .mce-btn .mce-i-icon-review {
+background-image: url("icon.png");
+background-repeat: no-repeat;
+background-color: transparent;
+}
+#toplevel_page_ecs_settings a div.wp-menu-image {
+	background:url(../js/button.png) no-repeat center;
+	background-position:center center !important;
+}

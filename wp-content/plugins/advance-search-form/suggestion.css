@@ -1,0 +1,9 @@
+
+/* Auto suggestion */
+.searchtext{position:relative}
+.searchtext .suggestion{position:absolute;left:0;top:46px;width:100%;background:#FCFCFC;border:1px solid #BEBEBE;border-top:none;border-bottom:none;z-index:100;display:none;overflow:hidden}
+#searchform .suggestion{top:31px}
+.searchtext .suggestion li{overflow:hidden}
+.searchtext .suggestion li a{padding:7px 10px;display:block;border-bottom:1px solid #BEBEBE;text-decoration:none;color:#606060;line-height:1em;height:14px;}
+.searchtext .suggestion li.active a{background:#E0F1FC}
+.ss.loading{background:#FFF url("loading.gif") right no-repeat}

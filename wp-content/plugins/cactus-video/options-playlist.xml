@@ -1,0 +1,54 @@
+<?xml version='1.0'?> 
+<options>
+	<tab label="General" icon="cog">
+		<group>
+			<fields label="Enable Video Playlists">
+				<option id="enable_video_playlist" type="select" default="1" tooltip="" >
+					<select value="1" text="On"/>
+					<select value="0" text="Off"/>
+				</option>
+				<description>Enable Video Playlists feature</description>
+			</fields>
+			<fields label="Playlist slug">
+				<option id="playlist-slug" type="textfield" width="100" default="playlist"></option>
+				<description>Change single Playlist slug. Remember to save the permalink settings again in Settings > Permalinks</description>
+			</fields>
+			<fields label="Single Playlist Sidebar">
+				<option id="playlist_sidebar" type="select" default="right" tooltip="" >
+					<select value="right" text="Right"/>
+					<select value="both" text="Left &amp; Right"/>
+					<select value="left" text="Left"/>
+					<select value="full" text="Hidden"/>
+				</option>
+				<description>Choose sidebar layout for Single Playlist page</description>
+			</fields>
+			<fields label='Playlist Order'>
+				<option id="playlist_video_order" type="select" default="DESC" tooltip="" >
+					<select value="DESC" text="DESC"/>
+					<select value="ASC" text="ASC"/>
+					<select value="custom" text="Custom"/>
+				</option>
+				<description>Order of videos in the playlist</description>
+			</fields>
+			<fields label='Enable "Playlists Have This Video" box'>
+				<option id="enable_containing_playlists" type="select" default="0" tooltip="" >
+					<select value="1" text="On"/>
+					<select value="0" text="Off"/>
+				</option>
+				<description>Enable "Playlists have this video" box in Single Video page</description>
+			</fields>
+			<fields label='"Playlists Have This Video" heading'>
+				<option id="containing_playlists_heading" type="textfield" width="300" default="Playlists Have This Video"></option>
+				<description>Heading of the box "Playlists Have This Video"</description>
+				<condition expression="enable_containing_playlists:is(1)"/>
+			</fields>
+			<fields label='Allow Quick Edit'>
+				<option id="allow_quick_edit" type="select" default="0" tooltip="" >
+					<select value="0" text="No"/>
+					<select value="1" text="Yes"/>
+				</option>
+				<description>Allow to select Channels in Quick Edit Post mode. Should be turn off if there are too many channels</description>
+			</fields>
+		</group>
+	</tab>
+</options>

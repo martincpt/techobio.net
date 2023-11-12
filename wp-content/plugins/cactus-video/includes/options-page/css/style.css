@@ -1,0 +1,50 @@
+/* Options Page Style */
+body{background:none}
+.wrap{background: none repeat scroll 0 0 #FFFFFF;border-radius: 3px;margin: 10px 20px 0 2px;padding: 10px 20px;}
+.wrap h2{margin:0 0 20px 0}
+.wp-picker-holder{position:absolute}
+.wp-picker-container{line-height:2.5em}
+.row .option{margin:0 40px 0 0;display:inline-block	}
+.row .option label{margin:0 10px 0 0}
+.row.description{font-style:italic;color:#999;}
+.uk-table .row td,.uk-table th{border-bottom:none}
+.uk-table .row.label td{border-bottom:1px dashed #CCC;font-weight:bold}
+
+.uk-table thead th.group-label{font-size:18px}
+label.fields-label{font-size:16px}
+.uk-table .row.description td{padding:0 0 15px 10px}
+
+.option-page .uk-table .color{width:80px;height:80px;text-align:center}
+.option-page .logo_image_holder{position:relative;margin:10px 0; }
+.option-page .logo_image_holder img{max-width:100px}
+.option-page .logo_image_holder .media-select-close{position: absolute;right: 0;width: 20px;height: 20px;cursor:pointer;}
+.option-page .logo_image_holder .media-select-close i{font-size:20px}
+.option-page .uk-table .background-selector .color {height:30px}
+.option-page .clearer{display:block;height:5px}
+
+@charset "utf-8";
+/* CSS Document */
+.cmb_metabox_description{ float:right; width:48%}
+.cmb_metabox .field-item{ float:left; width:50%}
+
+.wrap .uk-tab>li>a{border-top:none !important;     -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: color 0 ease-in;
+    transition: none;}
+.wrap .uk-tab>li>a:not(:hover){padding-left:13px;padding-top:14px !important;padding-bottom:14px !important}
+.wrap .uk-tab>li.uk-active>a:not(:hover){padding-left:10px}
+.wrap .uk-tab>li>a:hover{padding-left:10px !important;padding-top:14px !important;padding-bottom:14px !important}
+.wrap .submit-div{text-align:right;margin:20px 0}
+.wrap button[type=submit]{margin: 0;    padding: 5px 40px;    font-size: 1.2em;    font-weight: bold; float:right}
+.wrap .submit-div h2{float:left; display:inline-block;margin:0}
+.option-page .clearer{clear:both}
+.wrap .option-page label.fields-label{font-size:14px;font-weight:bold}
+.wrap .group-div{background:#efefef;padding:20px;margin:0 0 20px 0}
+.wrap .right-panel{border: 1px solid rgb(221, 221, 221);margin-left: -1px !important;padding-left:10px !important}
+.wrap .right-panel #options-page-tab-content{padding-right:10px}
+.wrap .uk-table thead th.group-label{padding-bottom:30px}
+
+#wpcontent{background:#F1F1F1}
+.rtl .fields-checkbox label{float:right;margin-left:10px}
+
+#options-page-tab-content .wp-picker-holder{z-index:1}

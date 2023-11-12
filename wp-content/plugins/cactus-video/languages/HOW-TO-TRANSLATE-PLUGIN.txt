@@ -1,0 +1,13 @@
+1. Open en.po file in POEDIT (https://poedit.net/)
+
+2. Translate all strings into your language
+
+3. Save it. Name the .mo file according to this format
+
+videopro-{language_code}.mo
+
+For example, language_code for German is de_DE, so the file name will be
+
+videopro-de_DE.mo
+
+4. Put the .mo file in /languages/ folder of plugin

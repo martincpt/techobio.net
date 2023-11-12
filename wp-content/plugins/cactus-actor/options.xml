@@ -1,0 +1,22 @@
+<?xml version='1.0'?> 
+<options>
+	<tab label="General" icon="cog">
+		<group>
+			<fields label="Actor slug">
+				<option id="actor-slug" type="textfield" width="100" default="actor"></option>
+				<description>Change single actor slug. Remember to save the permalink settings again in Settings > Permalinks</description>
+			</fields>
+			<fields label="“In this video” text">
+				<option id="actor-static-text" type="textfield" width="100" default="In this video"></option>
+				<description>Change heading text of “In this video” section</description>
+			</fields>
+			<fields label="Show Birthday">
+				<option id="actor-birthday" type="select" default="1">
+					<select value="1" text="On"/>
+					<select value="0" text="Off"/>
+				</option>
+				<description>Show actor birthday in Actor detail page</description>
+			</fields>
+		</group>
+	</tab>
+</options>

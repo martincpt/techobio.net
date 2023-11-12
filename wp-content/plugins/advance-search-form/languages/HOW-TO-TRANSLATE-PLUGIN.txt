@@ -1,0 +1,15 @@
+1. Open en.po file in POEDIT (https://poedit.net/)
+
+2. Translate all strings into your language
+
+3. Save it. Name the file according to this format
+
+asf-{language_code}.mo
+videopro-{language_code}.mo
+
+We need two files as this plugin supports 2 text domains. Change the language_code to your language. For example, language_code for German is de_DE, so the two files will be
+
+asf-de_DE.mo
+videopro-de_DE.mo
+
+4. Put the .mo file in /languages/ folder of plugin

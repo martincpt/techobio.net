@@ -1,0 +1,28 @@
+Note* 
+Cactus-Unyson back up demo content extension
+
+#1 : Disable/Endable backup when create Demo content :
+	- File : framework/extensions/backups/extensions/backups-demo/class-fw-extension-backups-demo.php -> line 420 to 421
+
+#2 : Fix path to backup folder :
+	- File : framework/extensions/backups/helpers.php -> line 303 to 307
+
+#3 : Enqueue Demo content install script :
+	- File : framework/extensions/backups/extensions/backups-demo/class-fw-extension-backups-demo.php -> line 224 to 232
+		function : is_page() check to enqueue script to.
+
+#4 : Cactus video pro hook :
+	- File : framework/extensions/backups/extensions/backups-demo/class-fw-extension-backups-demo.php -> line 88
+		hook with function : _display_page() , template file is : framework/extensions/backups/extensions/backups-demo/views/page.php
+
+#5 : Hide Demo content install in Menu :
+	- File : framework/extensions/backups/extensions/backups-demo/class-fw-extension-backups-demo.php -> line 49
+		function : add_action('admin_menu', array($this, '_admin_action_admin_menu'));
+#6 : Hide Unyson in Menu:
+	- File : framework/core/components/extensions/manager/class--fw-extensions-manager.php -> line 68 to 69
+		function : add_action('admin_menu', array($this, '_action_admin_menu'));
+			add_action('network_admin_menu', array($this, '_action_admin_menu'));
+
+
+#7 do_action 'videopro_backup_before_demo'
+framework/extensions/backups/extensions/backups-demo/class-fw-extension-backups-demo.php 184

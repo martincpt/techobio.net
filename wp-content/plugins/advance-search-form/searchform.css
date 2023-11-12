@@ -1,0 +1,88 @@
+.advance-search-form{}
+.advance-search-form .lookin-cleaner{display:block}
+
+/* DEFAULT LIGHT STYLES */
+#searchform {background:#E0F1FC;padding:4px;border-radius:4px;display:inline-block}
+/*#searchform .lookin{display:none}*/
+#searchform .ss,.advance-search-form .ss,#searchform #s{border:1px solid #7DC6DD;box-shadow: inset 1px 2px 2px #E7E7E7;margin:0;padding:11px 9px;border-top-right-radius: 0;
+border-bottom-right-radius: 0;font-size:13px;color: #AEAEAE;}
+#searchform input[type="submit"],.advance-search-form input[type="submit"]{background-image: -moz-linear-gradient(top, #F2F8FB, #CDE4EE);
+background-image: -ms-linear-gradient(top, #F2F8FB, #CDE4EE);
+background-image: -webkit-linear-gradient(top, #F2F8FB, #CDE4EE);
+background-image: -o-linear-gradient(top, #F2F8FB, #CDE4EE);
+background-image: linear-gradient(top, #F2F8FB, #CDE4EE);border:1px solid #3AA3C4;margin:0 0 0 -5px;color:#527988;border-top-left-radius: 0;
+border-bottom-left-radius: 0;font-size:13px;padding:11px;box-shadow:none}
+
+
+.advance-search-form .search_tags{display:block;padding:20px 0 20px 0}
+.advance-search-form .search_tags a{padding:3px 10px;background:#DCECF6;color:#555;text-decoration:none;border-radius:4px;display:inline-block;margin:0 3px 3px 0}
+.advance-search-form .search_tags a.filtered{background:#f0f0f0;}
+
+.advance-search-form div{
+	padding: 15px 10px 10px 10px;
+	border: 1px solid #BFC3C5;
+	border-radius: 6px;
+	background:#FDFDFD;
+	display:inline-block;
+	margin:0 0 20px 0;
+}
+.advance-search-form .ss{width:410px}
+
+.advance-search-form .searchtext,.advance-search-form .searchbutton{padding:4px;background:#F2F5F7;display:inline-block;border-radius:4px}
+.advance-search-form .searchbutton{margin-left:-8px}
+
+.advance-search-form .lookin,.advance-search-form .orderby,.advance-search-form .order{margin:5px 0 0 0;display:inline-block}
+.advance-search-form select {
+    padding:5px;
+    margin: 0;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#e8e8e8 36%,
+		#e3e3e3);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#ffffff),
+		color-stop(0.36, #fbfbfb),
+		to(#f7f7f7));
+    color: #555;
+    border: 1px solid #BEBEBE;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+}
+
+/* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .advance-search-form select {padding-right:18px}
+}
+
+.advance-search-form label {position:relative}
+.advance-search-form label:after {
+    content:'<>';
+    font:11px "Consolas", monospace;
+    color:#aaa;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:8px; top:2px;
+    padding:0 0 2px;
+    border-bottom:1px solid #ddd;
+    position:absolute;
+    pointer-events:none;
+}
+.advance-search-form label:before {
+    content:'';
+    right:6px; top:0px;
+    width:20px; height:20px;    
+    position:absolute;
+    pointer-events:none;
+    display:block;
+}

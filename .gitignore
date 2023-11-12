@@ -1,0 +1,6 @@
+cgi-bin/
+.well-known/
+
+/*.log
+/*.gz
+**/.DS_Store
