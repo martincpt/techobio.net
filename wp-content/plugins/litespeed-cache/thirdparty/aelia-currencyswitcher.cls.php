@@ -8,34 +8,35 @@
  * @subpackage	LiteSpeed_Cache/thirdparty
  * @author		LiteSpeed Technologies <info@litespeedtech.com>
  */
-namespace LiteSpeed\Thirdparty ;
+namespace LiteSpeed\Thirdparty;
 
-defined( 'WPINC' ) || exit ;
+defined('WPINC') || exit();
 
-use \LiteSpeed\API ;
+use LiteSpeed\API;
 
 class Aelia_CurrencySwitcher
 {
-	private static $_cookies = array(
-		'aelia_cs_selected_currency',
-		'aelia_customer_country',
-		'aelia_customer_state',
-		'aelia_tax_exempt',
-	) ;
+	private static $_cookies = array('aelia_cs_selected_currency', 'aelia_customer_country', 'aelia_customer_state', 'aelia_tax_exempt');
 
 	/**
 	 * Detects if WooCommerce is installed.
 	 *
 	 * @since 1.0.13
 	 * @access public
-	 * @global $GLOBALS;
 	 */
 	public static function detect()
 	{
-		if ( defined('WOOCOMMERCE_VERSION') && isset($GLOBALS['woocommerce-aelia-currencyswitcher']) && is_object($GLOBALS['woocommerce-aelia-currencyswitcher']) ) {
+		if (defined('WOOCOMMERCE_VERSION') && isset($GLOBALS['woocommerce-aelia-currencyswitcher']) && is_object($GLOBALS['woocommerce-aelia-currencyswitcher'])) {
 			// Not all pages need to add vary, so need to use this API to set conditions
-			API::hook_vary_add( __CLASS__ . '::check_cookies' ) ;
+			self::$_cookies = apply_filters('litespeed_3rd_aelia_cookies', self::$_cookies);
+			add_filter('litespeed_vary_curr_cookies', __CLASS__ . '::check_cookies'); // this is for vary response headers, only add when needed
+			add_filter('litespeed_vary_cookies', __CLASS__ . '::register_cookies'); // this is for rewrite rules, so always add
 		}
+	}
+
+	public static function register_cookies($list)
+	{
+		return array_merge($list, self::$_cookies);
 	}
 
 	/**
@@ -45,17 +46,13 @@ class Aelia_CurrencySwitcher
 	 * @since 1.0.13
 	 * @access public
 	 */
-	public static function check_cookies()
+	public static function check_cookies($list)
 	{
-		if ( ! apply_filters( 'litespeed_control_cacheable', false ) ) {
-			return;
-		}
-
 		// NOTE: is_cart and is_checkout should also be checked, but will be checked by woocommerce anyway.
-		if ( ! is_woocommerce() ) {
-			return ;
+		if (!is_woocommerce()) {
+			return $list;
 		}
 
-		API::vary_add( self::$_cookies ) ;
+		return array_merge($list, self::$_cookies);
 	}
 }

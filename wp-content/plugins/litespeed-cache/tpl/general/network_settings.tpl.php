@@ -2,6 +2,7 @@
 namespace LiteSpeed;
 defined( 'WPINC' ) || exit;
 
+$this->form_action();
 ?>
 
 <h3 class="litespeed-title-short">
@@ -26,6 +27,8 @@ $this->form_action( Router::ACTION_SAVE_SETTINGS_NETWORK );
 			</div>
 		</td>
 	</tr>
+
+	<?php require LSCWP_DIR . 'tpl/general/settings_inc.guest.tpl.php'; ?>
 
 </tbody></table>
 

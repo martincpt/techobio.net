@@ -17,21 +17,19 @@ $_panels = array(
 	),
 	array(
 		'title'	=> sprintf( __( 'Purge %s Error', 'litespeed-cache' ), '403' ),
-		'desc'	=> sprintf( __( 'Purge error pages, including %s pages', 'litespeed-cache' ), '403' ),
+		'desc'	=> sprintf( __( 'Purge %s error pages', 'litespeed-cache' ), '403' ),
 		'icon'	=> 'purge-403',
 		'append_url'	=> Purge::TYPE_PURGE_ERROR . '403',
 	),
 	array(
 		'title'	=> sprintf( __( 'Purge %s Error', 'litespeed-cache' ), '404' ),
-		'desc'	=> sprintf( __( 'Purge error pages, including %s pages', 'litespeed-cache' ), '404' ),
+		'desc'	=> sprintf( __( 'Purge %s error pages', 'litespeed-cache' ), '404' ),
 		'icon'	=> 'purge-404',
 		'append_url'	=> Purge::TYPE_PURGE_ERROR . '404',
 	),
 	array(
-		'title'	=> sprintf( __( 'Purge %s Error', 'litespeed-cache' ), '403' ),
-		'desc'	=> sprintf( __( 'Purge error pages, including %s pages', 'litespeed-cache' ), '403' ),
-		'title'	=> __( 'Purge 500 Error', 'litespeed-cache' ),
-		'desc'	=> __( 'Purge error pages, including 500 pages', 'litespeed-cache' ),
+		'title'	=> sprintf( __( 'Purge %s Error', 'litespeed-cache' ), '500' ),
+		'desc'	=> sprintf( __( 'Purge %s error pages', 'litespeed-cache' ), '500' ),
 		'icon'	=> 'purge-500',
 		'append_url'	=> Purge::TYPE_PURGE_ERROR . '500',
 	),
@@ -67,7 +65,7 @@ if ( Router::opcache_enabled() ) {
 	) ;
 }
 
-if ( Conf::val( Base::O_OPTM_CCSS_GEN ) ) {
+if ( $this->has_cache_folder( 'ccss' ) ) {
 	$_panels[] = array(
 		'title'	=> __( 'Purge All', 'litespeed-cache' ) . ' - ' . __( 'Critical CSS', 'litespeed-cache' ),
 		'desc'	=> __( 'This will delete all generated critical CSS files', 'litespeed-cache' ),
@@ -76,7 +74,16 @@ if ( Conf::val( Base::O_OPTM_CCSS_GEN ) ) {
 	) ;
 }
 
-if ( Conf::val( Base::O_OPTM_LOCALIZE ) ) {
+if ( $this->has_cache_folder( 'ucss' ) ) {
+	$_panels[] = array(
+		'title'	=> __( 'Purge All', 'litespeed-cache' ) . ' - ' . __( 'Unique CSS', 'litespeed-cache' ),
+		'desc'	=> __( 'This will delete all generated unique CSS files', 'litespeed-cache' ),
+		'icon'	=> 'purge-cssjs',
+		'append_url'	=> Purge::TYPE_PURGE_ALL_UCSS,
+	) ;
+}
+
+if ( $this->has_cache_folder( 'localres' ) ) {
 	$_panels[] = array(
 		'title'		=> __( 'Purge All', 'litespeed-cache' ) . ' - ' . __( 'Localized Resources', 'litespeed-cache' ),
 		'desc'	=> __( 'This will delete all localized resources', 'litespeed-cache' ),
@@ -85,16 +92,16 @@ if ( Conf::val( Base::O_OPTM_LOCALIZE ) ) {
 	);
 }
 
-if ( Placeholder::has_lqip_cache() ) {
+if ( $this->has_cache_folder( 'lqip' ) ) {
 	$_panels[] = array(
 		'title'	=> __( 'Purge All', 'litespeed-cache' ) . ' - ' . __( 'LQIP Cache', 'litespeed-cache' ),
 		'desc'	=> __( 'This will delete all generated image LQIP placeholder files', 'litespeed-cache' ),
-		'icon'	=> 'purge-placeholder',
+		'icon'	=> 'purge-front',
 		'append_url'	=> Purge::TYPE_PURGE_ALL_LQIP,
 	) ;
 }
 
-if ( Avatar::has_cache() ) {
+if ( $this->has_cache_folder( 'avatar' ) ) {
 	$_panels[] = array(
 		'title'	=> __( 'Purge All', 'litespeed-cache' ) . ' - ' . __( 'Gravatar Cache', 'litespeed-cache' ),
 		'desc'	=> __( 'This will delete all cached Gravatar files', 'litespeed-cache' ),
@@ -106,7 +113,7 @@ if ( Avatar::has_cache() ) {
 
 $_panels[] = array(
 	'title'	=> __( 'Purge All', 'litespeed-cache' ),
-	'desc'	=> __( 'Purge the cache entries created by this plugin except for Critical CSS & LQIP caches', 'litespeed-cache' ),
+	'desc'	=> __( 'Purge the cache entries created by this plugin except for Critical CSS & Unique CSS & LQIP caches', 'litespeed-cache' ),
 	'icon'	=> 'purge-all',
 	'title_cls'	=> 'litespeed-warning',
 	'newline'	=> true,

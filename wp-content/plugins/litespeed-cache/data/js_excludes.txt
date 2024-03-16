@@ -8,6 +8,9 @@ stats.wp.com
 js.stripe.com
 paypal.com/sdk/js
 maps.google.com/maps
+cse.google.com/cse.js
+/syntaxhighlighter/
+spotlight-social-photo-feeds ## https://docs.spotlightwp.com/article/757-autoptimize-compatibility @Tobolo
 
 # Inline JS excludes
 document.write
@@ -19,3 +22,9 @@ adsbygoogle
 block_tdi_ ## Theme: Newspaper by tagDiv.com
 
 data-view-breakpoint-pointer ## Plugin: The Events Calendar by Modern Tribe (https://theeventscalendar.com/)
+
+wp-json/wp-statistics ## WP Statistics
+
+stats.wp.com/e-
+_stq
+## JetPack Stats

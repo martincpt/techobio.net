@@ -3,10 +3,10 @@ namespace LiteSpeed;
 defined( 'WPINC' ) || exit;
 
 $last_generated = Avatar::get_summary();
-$avatar_queue = Avatar::get_instance()->queue_count();
+$avatar_queue = Avatar::cls()->queue_count();
 ?>
 
-<?php if ( Avatar::need_db() && ! Data::get_instance()->tb_exist( 'avatar' ) ) : ?>
+<?php if ( $this->cls( 'Avatar' )->need_db() && ! $this->cls( 'Data' )->tb_exist( 'avatar' ) ) : ?>
 <div class="litespeed-callout notice notice-error inline">
 	<h4><?php echo __( 'WARNING', 'litespeed-cache' ); ?></h4>
 	<p><?php echo sprintf( __( 'Failed to create Avatar table. Please follow <a %s>Table Creation guidance from LiteSpeed Wiki</a> to finish setup.', 'litespeed-cache' ), 'href="https://www.litespeedtech.com/support/wiki/doku.php/litespeed_wiki:cache:lscwp:installation" target="_blank"' ); ?></p>
@@ -93,6 +93,10 @@ $avatar_queue = Avatar::get_instance()->queue_count();
 			<div class="litespeed-desc">
 				<?php echo __( 'Localize external resources.', 'litespeed-cache' ); ?>
 				<?php Doc::learn_more( 'https://docs.litespeedtech.com/lscache/lscwp/pageopt/#localize' ); ?>
+
+				<br /><font class="litespeed-danger">
+					🚨 <?php echo sprintf( __( 'Please thoroughly test all items in %s to ensure they function as expected.', 'litespeed-cache' ), '<code>' . Lang::title( Base::O_OPTM_LOCALIZE_DOMAINS ) . '</code>' ); ?>
+				</font>
 			</div>
 		</td>
 	</tr>
@@ -120,9 +124,12 @@ $avatar_queue = Avatar::get_instance()->queue_count();
 
 				<br /><?php echo sprintf( __( 'Comments are supported. Start a line with a %s to turn it into a comment line.', 'litespeed-cache' ), '<code>#</code>' ); ?>
 
-				<br /><?php echo __( 'Non-`.js` file extensions will be ignored.', 'litespeed-cache' ); ?>
-				<?php echo __( 'Example', 'litespeed-cache' ); ?>: <code>https://www.example.com/one.js</code>
+				<br /><?php echo __( 'Example', 'litespeed-cache' ); ?>: <code>https://www.example.com/one.js</code>
 				<?php Doc::learn_more( 'https://docs.litespeedtech.com/lscache/lscwp/pageopt/#localization-files' ); ?>
+
+				<br /><font class="litespeed-danger">
+					🚨 <?php echo __( 'Please thoroughly test each JS file you add to ensure it functions as expected.', 'litespeed-cache' ); ?>
+				</font>
 
 			</div>
 		</td>

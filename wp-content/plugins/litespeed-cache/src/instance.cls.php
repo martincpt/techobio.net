@@ -4,25 +4,10 @@
  *
  * @since      	3.0
  */
-namespace LiteSpeed ;
+namespace LiteSpeed;
 
-defined( 'WPINC' ) || exit ;
+defined('WPINC') || exit();
 
-abstract class Instance
+abstract class Instance extends Root
 {
-	/**
-	 * Get the current instance object. To be inherited.
-	 *
-	 * @since 3.0
-	 * @access public
-	 */
-	public static function get_instance()
-	{
-		if ( ! isset( static::$_instance ) ) {
-			static::$_instance = new static() ;
-		}
-
-		return static::$_instance ;
-	}
-
 }
