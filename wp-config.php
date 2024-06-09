@@ -21,13 +21,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'martintr_techobio_net' );
+define( 'DB_NAME', 'techobio.net_master' );
 
 /** MySQL database username */
-define( 'DB_USER', 'martintr_techobio_net' );
+define( 'DB_USER', 'techobio.net_master' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'iC!7sLFiX[mR@0;r%k' );
+define( 'DB_PASSWORD', '0Lr;NokHI}IFe(h0' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
